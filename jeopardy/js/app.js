@@ -12,8 +12,18 @@ $(() => {
 	let score = 0;
 
 	// show and hide modal
-	const showHideModal =
+
 });
+
+const giveHint = (e, $modal) => {
+	let clickedButton = $(e.currentTarget);
+	let num = parseInt(clickedButton.data('num'));
+	let theHint = hints[num];
+	window.currentHint = num;
+	$modal.find('.modal-title').text(theHint.hint);
+	$modal.find('.modal-body').empty().append(giveChoices(theHint));
+}
+
 
 
 const showHideModal = () => {
