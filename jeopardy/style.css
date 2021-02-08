@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+body {
+  background-color: #3a0088;
+  color: white;
+  font-family: 'Cabin Sketch', cursive, 'sans serif';
+}
+
+.header {
+  border: 1px solid black;
+  display: inline;
+  overflow-wrap: break-word;
+}
+
+.clue-names {
+  margin-top: 20px;
+}
