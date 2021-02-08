@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 
 body {
-  background-color: #3a0088;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  /* source: webgradients.com */
   color: white;
   font-family: 'Cabin Sketch', cursive, 'sans serif';
 }
 
-.header {
-  border: 1px solid black;
+.header, .footer {
   display: inline;
   overflow-wrap: break-word;
 }
@@ -15,3 +15,5 @@ body {
 .clue-names {
   margin-top: 20px;
 }
+
+.footer {}
