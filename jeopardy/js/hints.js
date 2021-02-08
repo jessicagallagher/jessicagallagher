@@ -15,7 +15,7 @@ const hints = [
 },
 	{
 		hint: 'Padding, Border, Margin',
-		answers: ['What is the Box Model?', 'What are attributes required for every selector?', 'What are considered necessary for Flexbox?', 'What are attributes that all mean the same thing?'],
+		answers: ['What is the Box Model?', 'What are attributes required for every selector?', 'What are properties considered necessary for Flexbox?', 'What are attributes that all mean the same thing?'],
 		correct: 'What is the Box Model?',
 		points: 200
 },
@@ -26,13 +26,13 @@ const hints = [
 		points: 200
 },
 	{
-		hint: 'I wish I knew all of the contents of this folder... I think something\'s hiding!',
+		hint: 'I wish I knew all of the contents of this folder... I think something\'s hiding! There\'s a command for this.',
 		answers: ['What is ls -a', 'What is ls?', 'What is ls -l?', 'What is ls ~?'],
 		correct: 'What is ls -a?',
 		points: 200
 },
 	{
-		hint: 'I can\'t remember if I added everything that I wanted to commit to staging.',
+		hint: 'I can\'t remember if I added everything that I wanted to commit to staging. There\'s a command for this.',
 		answers: ['What is git log?', 'What is git status?', 'What is git help?', 'What is git init?'],
 		correct: 'What is git status?',
 		points: 200
@@ -43,8 +43,9 @@ const hints = [
 		correct: 'What is Rubber Duck coding?',
 		points: 200
 },
+/* $400 questions */
 	{
-		hint: 'This attribute is used for something that probably happens once or twice.',
+		hint: 'This HTML element attribute is used for something that probably happens once or twice.',
 		answers: ['What is an aside?', 'What is .unique?', 'What is an id?', 'What is a class?'],
 		correct: 'What is an id?',
 		points: 400
@@ -79,6 +80,7 @@ const hints = [
 		correct: 'What are bugs?',
 		points: 400
 },
+/* $600 questions */
 	{
 		hint: 'This HTML tag defines a hyperlink.',
 		answers: ['What is <a>?', 'What is <link>', 'What is <src>?', 'What is <href>?'],
@@ -104,7 +106,7 @@ const hints = [
 		points: 600
 },
 	{
-		hint: 'This command will grab all the commits from the remote branch and merge them into your branch.',
+		hint: 'This command will grab all the commits from the remote branch and merge them into your own branch.',
 		answers: ['What is push?', 'What is fetch?', 'What is merge?', 'What is pull?'],
 		correct: 'What is pull?',
 		points: 600
@@ -115,6 +117,7 @@ const hints = [
 		correct: 'What is fetch?',
 		points: 600
 },
+/* $800 questions */
 	{
 		hint: 'In HTML, a table is made of these elements.',
 		answers: ['What is <table>, <row>, <column>?', 'What is <tb>, <td>?', 'What is <table>, <tr>, <th>, <td>?', 'What is <table>, <h1>, <section>?'],
@@ -123,13 +126,13 @@ const hints = [
 },
 	{
 		hint: 'The opacity property specifies the transparency of an element. It takes one of these values.',
-		answers: ['What are numbers between 0.0 - 1.0?', 'What is any integer?', 'What are positive numbers only?', 'What are numbers between 1 - 10?'],
+		answers: ['What are numbers between 0.0 - 1.0?', 'What is any integer?', 'What are positive numbers only?', 'What are numbers between 0 - 100?'],
 		correct: 'What are numbers between 0.0 - 1.0?',
 		points: 800
-};
+},
 	{
-		hint: 'This JavaScript variable is used to hold multiple values.',
-		answers: ['What is an array?', 'What is an object?', 'What are key value pairs?', 'What is an object literal?'],
+		hint: 'This JavaScript object is used to hold multiple objects.',
+		answers: ['What is an array?', 'What is an object key?', 'What are key value pairs?', 'What is an object literal?'],
 		correct: 'What is an array?',
 		points: 800
 },
@@ -138,19 +141,20 @@ const hints = [
 		answers: ['What is mv?', 'What is cp?', 'What is mvdir?', 'What is mv -dir?'],
 		correct: 'What is mv?',
 		points: 800
-};
+},
 	{
 		hint: 'This command is important when considering version control.',
 		answers: ['What is git show?', 'What is git config?', 'What is git commit?', 'What is git push?'],
 		correct: 'What is git commit?',
 		points: 800
-};
+},
 	{
 		hint: 'This character has been the hide and seek champion since 1958.',
 		answers: ['What is the comma?', 'What is the curly bracket?', 'What is the semicolon?', 'What is the dollar sign?'],
 		correct: 'What is the semicolon?',
 		points: 800
-};
+},
+/* $1,000 questions */
 	{
 		hint: 'This element is an inline container used to mark up only part of a text.',
 		answers: ['What is <aside>?', 'What is <section>?', 'What is <span>?', 'What is <style>?'],
@@ -158,33 +162,35 @@ const hints = [
 		points: 1000
 },
 	{
-		hint: 'This type of display allows you to set the width, height, margin, and padding of an element while allowing that element to sit next to other elements.',
+		hint: 'This type of display allows you to set the width, height, margin, and padding of an element, while allowing that element to sit next to other elements.',
 		answers: ['What is inline-block?', 'What is block?', 'What is inline?', 'What is max-height?'],
 		correct: 'What is inline-block?',
 		points: 1000
-};
+},
 	{
-		hint: 'This variable declaration allows you to redeclare the variable later.',
+		hint: 'In the context of the most recent version of JavaScript, this variable declaration allows you to redeclare the variable later.',
 		answers: ['What is var?', 'What is const?', 'What is let?', 'What are both const and let?'],
 		correct: 'What is let?',
 		points: 1000
-};
+},
 	{
 		hint: 'To infinity and beyond! This command stops a program from running when you\'ve written an infinite loop.',
 		answers: ['What is CTRL C?', 'What is CTRL ALT DELETE?', 'What is CMD F?', 'What is ESC?'],
 		correct: 'What is CTRL C?',
 		points: 1000
-};
+},
 	{
 		hint: 'This request alerts the original owner of a repository that you\'ve made changes to their code that might be beneficial.',
 		answers: ['What is a merge request?', 'What is a fork request?', 'What is a pull request?', 'What is a commit request?'],
 		correct: 'What is a pull request?',
 		points: 1000
-};
+},
 	{
 		hint: 'This word is used by programmers when they don\'t want to explain what they just did.',
 		answers: ['What is an algorithm?', 'What is a function?', 'What is a loop?', 'What is a RegExp?'],
 		correct: 'What is an algorithm?',
 		points: 1000
-};
-]
+}
+];
+
+export default hints;
