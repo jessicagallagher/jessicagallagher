@@ -1,10 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
 body {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   /* source: webgradients.com */
   color: white;
-  font-family: 'Cabin Sketch', cursive, 'sans serif';
+  font-family: 'Pompiere', cursive, 'sans-serif';
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.header-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 10%;
+}
+
+.header-button:hover {
+  background-color: #ffcfdf;
 }
 
 .header, .footer {
@@ -13,7 +32,20 @@ body {
 }
 
 .clue-names {
+  font-size: 36px;
+  font-weight: bolder;
   margin-top: 20px;
+}
+
+.clue-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 65%;
+}
+
+.clue-button:hover {
+  background-color: #fdffab;
 }
 
 .footer {}
