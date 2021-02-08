@@ -14,6 +14,16 @@ h1 {
   margin-right: 60px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+#the-score {
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
 .header-button {
   background-color: white;
   border: 1px solid black;
@@ -26,7 +36,7 @@ h1 {
   background-color: #ffcfdf;
 }
 
-.header, .footer {
+.header {
   display: inline;
   overflow-wrap: break-word;
 }
@@ -47,5 +57,3 @@ h1 {
 .clue-button:hover {
   background-color: #fdffab;
 }
-
-.footer {}

@@ -192,5 +192,3 @@ const hints = [
 		points: 1000
 }
 ];
-
-export default hints;
