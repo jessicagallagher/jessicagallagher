@@ -89,6 +89,34 @@
     </div>
   </div>
 
+  <!-- clue modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="clueModal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="points">Points</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-row">
+            <div class="ml-3 mt-2 align-items-center">
+              <p class="smallLabel" id="cluenamesLabel">Clue</p>
+              <h4 id="clueText">Clue Text</h4>
+            </div>
+          </div>
+          <div class="d-flex flex-column py-3">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer1" onclick="submitQuestion()">Answer 1</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer2" onclick="submitQuestion()">Answer 2</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer3" onclick="submitQuestion()">Answer 3</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer4" onclick="submitQuestion()">Answer 4</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- Bootstrap Bundle with Popper -->
