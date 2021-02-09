@@ -5,190 +5,299 @@
 // github question source: https://education.github.com/git-cheat-sheet-education.pdf
 // lolz question source: https://medium.com/better-programming/101-funny-programmer-quotes-76c7f335b92d
 
-const hints = [
-/* $200 questions */
-	{
-		hint: '<link>, <img>, <hr>, <br>... to name a few',
-		answers: ['What are elements required to render a successful document?', 'What are self-closing tags?', 'What are elements that require alt-text?', 'What are elements that should be included in a <div>?'],
-		correct: 'What are self-closing tags?',
-		points: 200
-},
-	{
-		hint: 'Padding, Border, Margin',
-		answers: ['What is the Box Model?', 'What are attributes required for every selector?', 'What are properties considered necessary for Flexbox?', 'What are attributes that all mean the same thing?'],
-		correct: 'What is the Box Model?',
-		points: 200
-},
-	{
-		hint: '!false',
-		answers: ['What is null?', 'What is false?', 'What is true?', 'What is the incorrect way to use a boolean?'],
-		correct: 'What is true?',
-		points: 200
-},
-	{
-		hint: 'I wish I knew all of the contents of this folder... I think something\'s hiding! There\'s a command for this.',
-		answers: ['What is ls -a', 'What is ls?', 'What is ls -l?', 'What is ls ~?'],
-		correct: 'What is ls -a?',
-		points: 200
-},
-	{
-		hint: 'I can\'t remember if I added everything that I wanted to commit to staging. There\'s a command for this.',
-		answers: ['What is git log?', 'What is git status?', 'What is git help?', 'What is git init?'],
-		correct: 'What is git status?',
-		points: 200
-},
-	{
-		hint: 'In the context of programming... Rubber ducky, you\'re the one. You make coding lots of fun!',
-		answers: ['What is a song from Rugrats?', 'What is Rubber Duck coding?', 'What is a catchy tune?', 'What is something that doesn\'t make sense to me?'],
-		correct: 'What is Rubber Duck coding?',
-		points: 200
-},
-/* $400 questions */
-	{
-		hint: 'This HTML element attribute is used for something that probably happens once or twice.',
-		answers: ['What is an aside?', 'What is .unique?', 'What is an id?', 'What is a class?'],
-		correct: 'What is an id?',
-		points: 400
-},
-	{
-		hint: 'This CSS property allows you to identify which type of font you\'d like to use.',
-		answers: ['What is font?', 'What is font-style?', 'What is text?', 'What is font-family?'],
-		correct: 'What is font-family?',
-		points: 400
-},
-	{
-		hint: 'This type of operator description let\'s you determine whether there\'s a remainder.',
-		answers: ['What is the modulus?', 'What is division?', 'What is decrement?', 'What is combining division and subtraction?'],
-		correct: 'What is the modulus?',
-		points: 400
-},
-	{
-		hint: 'This command removes a directory and everything in it.',
-		answers: ['What is cp -r?', 'What is rm?', 'What is rmdir?', 'What is rm -r?'],
-		correct: 'What is rm -r?',
-		points: 400
-},
-	{
-		hint: 'This is one way to turn an existing directory into a Git repository.',
-		answers: ['What is git init?', 'What is git --setup <file>', 'What is git clone (URL)?', 'What is git log?'],
-		correct: 'What is git init?',
-		points: 400
-},
-	{
-		hint: 'In the context of programming, they don\'t die, they multiply!',
-		answers: ['What are features?', 'What are bugs?', 'What are chores?', 'What are breakpoints?'],
-		correct: 'What are bugs?',
-		points: 400
-},
-/* $600 questions */
-	{
-		hint: 'This HTML tag defines a hyperlink.',
-		answers: ['What is <a>?', 'What is <link>', 'What is <src>?', 'What is <href>?'],
-		correct: 'What is <a>?',
-		points: 600
-},
-	{
-		hint: 'This CSS property improves a browser\'s handling of small windows.',
-		answers: ['What is width?', 'What is position?', 'What is max-width?', 'What is display?'],
-		correct: 'What is max-width?',
-		points: 600
-},
-	{
-		hint: 'This loop is a great choice to use if you already know how many times you need to loop through something.',
-		answers: ['What is a For In loop?', 'What is a For loop?', 'What is a While loop?', 'What is a For Of loop?'],
-		correct: 'What is a For loop?',
-		points: 600
-},
-	{
-		hint: 'This command will print your file.',
-		answers: ['What is prnt?', 'What is cat?', 'What is touch-print?', 'What is print <file>?'],
-		correct: 'What is cat?',
-		points: 600
-},
-	{
-		hint: 'This command will grab all the commits from the remote branch and merge them into your own branch.',
-		answers: ['What is push?', 'What is fetch?', 'What is merge?', 'What is pull?'],
-		correct: 'What is pull?',
-		points: 600
-},
-	{
-		hint: 'Regina George (Mean Girls) would NOT be happy about this GitHub term... Stop trying to make it happen!',
-		answers: ['What is fetch?', 'What is merge?', 'What is upstream?', 'What is master?'],
-		correct: 'What is fetch?',
-		points: 600
-},
-/* $800 questions */
-	{
-		hint: 'In HTML, a table is made of these elements.',
-		answers: ['What is <table>, <row>, <column>?', 'What is <tb>, <td>?', 'What is <table>, <tr>, <th>, <td>?', 'What is <table>, <h1>, <section>?'],
-		correct: 'What is <table>, <tr>, <th>, <td>?',
-		points: 800
-},
-	{
-		hint: 'The opacity property specifies the transparency of an element. It takes one of these values.',
-		answers: ['What are numbers between 0.0 - 1.0?', 'What is any integer?', 'What are positive numbers only?', 'What are numbers between 0 - 100?'],
-		correct: 'What are numbers between 0.0 - 1.0?',
-		points: 800
-},
-	{
-		hint: 'This JavaScript object is used to hold multiple objects.',
-		answers: ['What is an array?', 'What is an object key?', 'What are key value pairs?', 'What is an object literal?'],
-		correct: 'What is an array?',
-		points: 800
-},
-	{
-		hint: 'This command moves a file or folder into another folder that\'s in the same directory.',
-		answers: ['What is mv?', 'What is cp?', 'What is mvdir?', 'What is mv -dir?'],
-		correct: 'What is mv?',
-		points: 800
-},
-	{
-		hint: 'This command is important when considering version control.',
-		answers: ['What is git show?', 'What is git config?', 'What is git commit?', 'What is git push?'],
-		correct: 'What is git commit?',
-		points: 800
-},
-	{
-		hint: 'This character has been the hide and seek champion since 1958.',
-		answers: ['What is the comma?', 'What is the curly bracket?', 'What is the semicolon?', 'What is the dollar sign?'],
-		correct: 'What is the semicolon?',
-		points: 800
-},
-/* $1,000 questions */
-	{
-		hint: 'This element is an inline container used to mark up only part of a text.',
-		answers: ['What is <aside>?', 'What is <section>?', 'What is <span>?', 'What is <style>?'],
-		correct: 'What is <span>?',
-		points: 1000
-},
-	{
-		hint: 'This type of display allows you to set the width, height, margin, and padding of an element, while allowing that element to sit next to other elements.',
-		answers: ['What is inline-block?', 'What is block?', 'What is inline?', 'What is max-height?'],
-		correct: 'What is inline-block?',
-		points: 1000
-},
-	{
-		hint: 'In the context of the most recent version of JavaScript, this variable declaration allows you to redeclare the variable later.',
-		answers: ['What is var?', 'What is const?', 'What is let?', 'What are both const and let?'],
-		correct: 'What is let?',
-		points: 1000
-},
-	{
-		hint: 'To infinity and beyond! This command stops a program from running when you\'ve written an infinite loop.',
-		answers: ['What is CTRL C?', 'What is CTRL ALT DELETE?', 'What is CMD F?', 'What is ESC?'],
-		correct: 'What is CTRL C?',
-		points: 1000
-},
-	{
-		hint: 'This request alerts the original owner of a repository that you\'ve made changes to their code that might be beneficial.',
-		answers: ['What is a merge request?', 'What is a fork request?', 'What is a pull request?', 'What is a commit request?'],
-		correct: 'What is a pull request?',
-		points: 1000
-},
-	{
-		hint: 'This word is used by programmers when they don\'t want to explain what they just did.',
-		answers: ['What is an algorithm?', 'What is a function?', 'What is a loop?', 'What is a RegExp?'],
-		correct: 'What is an algorithm?',
-		points: 1000
+const hints = {
+	// html category
+	htmlHints: {
+		hintLabel: 'HTML',
+		hint1: {
+			hintText: '<link>, <img>, <hr>, <br>... to name a few',
+			answer1: 'What are elements required to render a successful document?',
+			answer2: 'What are self-closing tags?',
+			answer3: 'What are elements that require alt-text?',
+			answer4: 'What are elements that should be included in a <div>?',
+			correct: 2,
+			points: 200
+		}
+		hint2: {
+			hintText: 'This HTML element attribute is used for something that probably happens once or twice.',
+			answer1: 'What is an aside?',
+			answer2: 'What is unique?',
+			answer3: 'What is an id?'
+			answer4: 'What is a class?',
+			correct: 3,
+			points: 400
+		}
+		hint3: {
+			hintText: 'This HTML tag allows a hyperlink.',
+			answer1: 'What is <a>?',
+			answer2: 'What is <link>',
+			answer3: 'What is <src>?',
+			answer4: 'What is <href>?',
+			correct: 1,
+			points: 600
+		}
+		hint4: {
+			hintText: 'In HTML, a table is made of these elements.',
+			answer1: 'What is <table>, <row>, <column>?',
+			answer2: 'What is <tb>, <td>?',
+			answer3: 'What is <table>, <tr>, <th>, <td>?',
+			answer4: 'What is <table>, <h1>, <section>?',
+			correct: 3,
+			points: 800
+		}
+		hint5: {
+			hintText: 'This element is an inline container used to mark up only part of a text.',
+			answer1: 'What is <aside>?',
+			answer2: 'What is <section>?',
+			answer3: 'What is <span>?',
+			answer4: 'What is <style>?',
+			correct: 3,
+			points: 1000
+		}
+	}
+	// css category
+	cssHints: {
+		hintLabel: 'CSS',
+		hint1: {
+			hintText: 'Padding, Border, Margin',
+			answer1: 'What is the Box Model?',
+			answer2: 'What are attributes required for every selector?',
+			answer3: 'What are properties considered necessary for Flexbox?',
+			answer4: 'What are attributes that all mean the same thing?',
+			correct: 1,
+			points: 200
+		}
+		hint2: {
+			hintText: 'This CSS property allows you to identify which type of font you\'d like to use.',
+			answer1: 'What is font?',
+			answer2: 'What is font-style?',
+			answer3: 'What is text?',
+			answer4: 'What is font-family?',
+			correct: 4,
+			points: 400
+		}
+		hint3: {
+			hintText: 'This CSS property improves a browser\'s handling of small windows.',
+			answer1: 'What is width?',
+			answer2: 'What is position?',
+			answer3: 'What is max-width?',
+			answer4: 'What is display?',
+			correct: 3,
+			points: 600
+		}
+		hint4: {
+			hintText: 'The opacity property specifies the transparency of an element. It takes one of these values.',
+			answer1: 'What are numbers between 0.0 - 1.0?',
+			answer2: 'What is any integer?',
+			answer3: 'What are positive numbers only?',
+			answer4: 'What are numbers between 0 - 100?',
+			correct: 1,
+			points: 800
+		}
+		hint5: {
+			hintText: 'This type of display allows you to set the width, height, margin, and padding of an element, while allowing that element to sit next to other elements.',
+			answer1: 'What is inline-block?',
+			answer2: 'What is block?',
+			answer3: 'What is grid?',
+			answer4: 'What is flex?',
+			correct: 1,
+			points: 1000
+		}
+	}
+	// javascript category
+	javascriptHints: {
+		hintLabel: 'JavaScript',
+		hint1: {
+			hintText: '!false',
+			answer1: 'What is null?',
+			answer2: 'What is false?',
+			answer3: 'What is true?',
+			answer4: 'What is the incorrect way to use a boolean?',
+			correct: 3,
+			points: 200
+		}
+		hint2: {
+			hintText: 'This type of operator description let\'s you determine whether there\'s a remainder.',
+			answer1: 'What is the modulus?',
+			answer2: 'What is division?',
+			answer3: 'What is decrement?',
+			answer4: 'What is combining division and subtraction?',
+			correct: 1,
+			points: 400
+		}
+		hint3: {
+			hintText: 'This type of loop is a great choice to use if you already know how many times you need to loop through something.',
+			answer1: 'What is a For In loop?',
+			answer2: 'What is a For loop?',
+			answer3: 'What is a While loop?',
+			answer4: 'What is a For Of loop?',
+			correct: 2,
+			points: 600
+		}
+		hint4: {
+			hintText: 'This JavaScript object can be used to hold multiple objects, including itself.',
+			answer1: 'What is an array?',
+			answer2: 'What is an object key?',
+			answer3: 'What are key value pairs?',
+			answer4: 'What is an object literal?',
+			correct: 1,
+			points: 800
+		}
+		hint5: {
+			hintText: 'In the context of the most recent version of JavaScript, this variable declaration allows you to redeclare the variable later.',
+			answer1: 'What is var?',
+			answer2: 'What is const?',
+			answer3: 'What is let?',
+			answer4: 'What are both const and let?',
+			correct: 3,
+			points: 1000
+		}
+	}
+	// cli category
+	cliHints: {
+		hintLabel: 'CLI',
+		hint1: {
+			hintText: 'I wish I knew all of the contents of this folder... I think something\'s hiding! There\'s a command for this.',
+			answer1: 'What is ls -a',
+			answer2: 'What is ls?',
+			answer3: 'What is ls -l?',
+			answer4: 'What is ls ~?',
+			correct: 1,
+			points: 200
+		}
+		hint2: {
+			hintText: 'This command removes a directory and everything in it.',
+			answer1: 'What is cp -rm?',
+			answer2: 'What is rm?',
+			answer3: 'What is rmdir?',
+			answer4: 'What is rm -r?',
+			correct: 4,
+			points: 400
+		}
+		hint3: {
+			hintText: 'This command will print your file.',
+			answer1: 'What is prnt?',
+			answer2: 'What is cat?',
+			answer3: 'What is touch-print?',
+			answer4: 'What is print <file>?',
+			correct: 2,
+			points: 600
+		}
+		hint4: {
+			hintText: 'This command moves a file or folder into another folder that\'s in the same directory.',
+			answer1: 'What is mv?',
+			answer2: 'What is cp?',
+			answer3: 'What is mvdir?',
+			answer4: 'What is mv -dir?',
+			correct: 1,
+			points: 800
+		}
+		hint5: {
+			hintText: 'To infinity and beyond! This command stops a program from running when you\'ve written an infinite loop.',
+			answer1: 'What is CTRL C?',
+			answer2: 'What is CTRL ALT DELETE?',
+			answer3: 'What is CMD F?',
+			answer4: 'What is ESC?',
+			correct: 1,
+			points: 1000
+		}
+	}
+	// github category
+	githubHints: {
+		hintLabel: 'GitHub',
+		hint1: {
+			hintText: 'I can\'t remember if I added everything that I wanted to commit to staging. There\'s a command for this.',
+			answer1: 'What is git log?',
+			answer2: 'What is git status?',
+			answer3: 'What is git help?',
+			answer4: 'What is git init?',
+			correct: 2,
+			points: 200
+		}
+		hint2: {
+			hintText: 'This is one way to turn an existing directory into a Git repository.',
+			answer1: 'What is git init?',
+			answer2: 'What is git --setup <file>',
+			answer3: 'What is git clone (URL)?',
+			answer4: 'What is git log?',
+			correct: 1,
+			points: 400
+		}
+		hint3: {
+			hintText: 'This command will grab all the commits from the remote branch and merge them into your own branch.',
+			answer1: 'What is push?',
+			answer2: 'What is fetch?',
+			answer3: 'What is merge?',
+			answer4: 'What is pull?',
+			correct: 4,
+			points: 600
+		}
+		hint4: {
+			hintText: 'This command is important when considering version control.',
+			answer1: 'What is git show?',
+			answer2: 'What is git config?',
+			answer3: 'What is git commit?',
+			answer4: 'What is git push?',
+			correct: 3,
+			points: 800
+		}
+		hint5: {
+			hintText: 'This request alerts the original owner of a repository that you\'ve made changes to their code that might be beneficial.',
+			answer1: 'What is a merge request?',
+			answer2: 'What is a fork request?',
+			answer3: 'What is a pull request?',
+			answer4: 'What is a commit request?',
+			correct: 3,
+			points: 1000
+		}
+	}
+	// lolz category
+	lolzHints: {
+		hintLabel: 'LOLZ',
+		hint1: {
+			hintText: 'In the context of programming... Rubber ducky, you\'re the one. You make coding lots of fun!',
+			answer1: 'What is a song from Rugrats?',
+			answer2: 'What is Rubber Duck coding?',
+			answer3: 'What is a catchy tune?',
+			answer4: 'What is something that doesn\'t make sense to me?',
+			correct: 2,
+			points: 200
+		}
+		hint2: {
+			hintText: 'In the context of programming, they don\'t die, they multiply!',
+			answer1: 'What are features?',
+			answer2: 'What are bugs?',
+			answer3: 'What are chores?',
+			answer4: 'What are breakpoints?',
+			correct: 2,
+			points: 400
+		}
+		hint3: {
+			hintText: 'Regina George would NOT be happy about this GitHub term... so stop trying to make it happen!',
+			answer1: 'What is fetch?',
+			answer2: 'What is merge?',
+			answer3: 'What is upstream?',
+			answer4: 'What is master?',
+			correct: 1,
+			points: 600
+		}
+		hint4: {
+			hintText: 'This character has been the hide and seek champion since 1958.',
+			answer1: 'What is the comma?',
+			answer2: 'What is the closing curly bracket?',
+			answer3: 'What is the semicolon?',
+			answer4: 'What is the dollar sign?',
+			correct: 3,
+			points: 800
+		}
+		hint5: {
+			hintText: 'This word is used by programmers when they don\'t want to explain what they just did. Richard Hendricks supposedly wrote one with 10 parentheses.',
+			answer1: 'What is an algorithm?',
+			answer2: 'What is a nest arrow function?',
+			answer3: 'What is a nested loop?',
+			answer4: 'What is a RegExp?',
+			correct: 1,
+			points: 1000
+		}
+	}
 }
-];
