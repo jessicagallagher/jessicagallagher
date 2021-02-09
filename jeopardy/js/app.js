@@ -15,6 +15,22 @@ $(() => {
 
 });
 
+
+const giveChoices = (theHint) => {
+	let $btnDiv = $('<div id="disabled" class="btn-group" data-toggle="buttons"></div>');
+	theHint.answers.forEach = (ans) => {
+		let $div = $('<div class="radio">');
+		let $label = $('<label class="radio-inline"></label>');
+		let $input = $('<input type="radio" name="ans" value="' + ans + '">');
+		$label.append($input);
+		$label.append(ans);
+		$div.append($label);
+		$btnDiv.append($div);
+	};
+	return $btnDiv;
+}
+
+
 const giveHint = (e, $modal) => {
 	let clickedButton = $(e.currentTarget);
 	let num = parseInt(clickedButton.data('num'));
