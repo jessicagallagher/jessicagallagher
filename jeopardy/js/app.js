@@ -27,7 +27,6 @@
 // questions, point values, and answer options
 //==============================================
 
-let cluenamesLabel = document.getElementbyId('cluenamesLabel');
 let clueText = document.getElementById('clueText');
 let answer1 = document.getElementById('answer1');
 let answer2 = document.getElementById('answer2');
@@ -39,6 +38,43 @@ let answer4 = document.getElementById('answer4');
 //========================
 
 let theScore = document.getElementById('theScore'); // updates score in header
-let currentScore = 0; // should match score in header
-let hintPoints = 0; // point value of clickedHint
-let clickedHint; // this will change throughout the game (e.currentTarget)
+// let currentScore = 0; // should match score in header
+// let hintPoints = 0; // point value of clickedHint
+let clickedHint; // this will change throughout the game (e.currentTarget/relatedTarget)
+
+const revealHint = (cluenames, clue) => {
+	getTheClues(cluenames, clue);
+	$('#clueModal').modal('show');
+	// console.log('clicked') checked to see if it's actually working
+}
+
+const getTheClues = (cluenames, clue) => {
+	console.log(cluenames);
+	points.innerHTML = '$' + 200 * clue;
+	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
+	answer1.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer1;
+	answer2.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer2;
+	answer3.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer3;
+	answer4.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer4;
+	findCorrectAnswer(hints['cluenames' + cluenames]['clue' + clue].correct);
+	hintPoints = event.target.innerHTML;
+	clickedHint = event.target;
+}
+
+// using switch statement to compare the value of the expression to the value of each case(aka trying to find a match between correct and the answer option)--break means there wasn't a match so move on: https://www.w3schools.com/js/js_switch.asp
+const findCorrectAnswer = (correct) => {
+	switch (correct) {
+	case '1':
+		answer1.classList.add('correct');
+		break;
+	case '2':
+		answer2.classList.add('correct');
+		break;
+	case '3':
+		answer3.classList.add('correct');
+		break;
+	case '4':
+		answer4.classList.add('correct');
+		break;
+	}
+}

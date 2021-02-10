@@ -10,11 +10,11 @@ const hints = {
 	cluenames1: {
 		cluenamesLabel: 'HTML',
 		clue1: {
-			clueText: '<link>, <img>, <hr>, <br>... to name a few',
+			clueText: '&lt;link&gt;, &ltimg&gt, &lthr&gt, &ltbr&gt... to name a few',
 			answer1: 'What are elements required to render a successful document?',
 			answer2: 'What are self-closing tags?',
 			answer3: 'What are elements that require alt-text?',
-			answer4: 'What are elements that should be included in a <div>?',
+			answer4: 'What are elements that should be included in a &lt;div&gt;?',
 			correct: 2,
 			points: 200
 		},
@@ -29,28 +29,28 @@ const hints = {
 		},
 		clue3: {
 			clueText: 'This HTML tag allows a hyperlink.',
-			answer1: 'What is <a>?',
-			answer2: 'What is <link>',
-			answer3: 'What is <src>?',
-			answer4: 'What is <href>?',
+			answer1: 'What is &lt;a&gt;?',
+			answer2: 'What is &lt;link&gt;',
+			answer3: 'What is &lt;src&gt;?',
+			answer4: 'What is &lt;href&gt;?',
 			correct: 1,
 			points: 600
 		},
 		clue4: {
 			clueText: 'In HTML, a table is made of these elements.',
-			answer1: 'What is <table>, <row>, <column>?',
-			answer2: 'What is <tb>, <td>?',
-			answer3: 'What is <table>, <tr>, <th>, <td>?',
-			answer4: 'What is <table>, <h1>, <section>?',
+			answer1: 'What is &lt;table&gt;, &lt;row&gt;, &lt;column&gt;?',
+			answer2: 'What is &lt;tb&gt;, &lt;td&gt;?',
+			answer3: 'What is &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;?',
+			answer4: 'What is &lt;table&gt;, &lt;h1&gt;, &lt;section&gt;?',
 			correct: 3,
 			points: 800
 		},
 		clue5: {
 			clueText: 'This element is an inline container used to mark up only part of a text.',
-			answer1: 'What is <aside>?',
-			answer2: 'What is <section>?',
-			answer3: 'What is <span>?',
-			answer4: 'What is <style>?',
+			answer1: 'What is &lt;aside&gt;?',
+			answer2: 'What is &lt;section&gt;?',
+			answer3: 'What is &lt;span&gt;?',
+			answer4: 'What is &lt;style&gt;?',
 			correct: 3,
 			points: 1000
 		}
@@ -179,7 +179,7 @@ const hints = {
 			answer1: 'What is prnt?',
 			answer2: 'What is cat?',
 			answer3: 'What is touch-print?',
-			answer4: 'What is print <file>?',
+			answer4: 'What is print &lt;file&gt;?',
 			correct: 2,
 			points: 600
 		},
@@ -217,7 +217,7 @@ const hints = {
 		clue2: {
 			clueText: 'This is one way to turn an existing directory into a Git repository.',
 			answer1: 'What is git init?',
-			answer2: 'What is git --setup <file>',
+			answer2: 'What is git --setup &lt;file&gt;',
 			answer3: 'What is git clone (URL)?',
 			answer4: 'What is git log?',
 			correct: 1,
