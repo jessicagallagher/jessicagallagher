@@ -38,7 +38,7 @@ let answer4 = document.getElementById('answer4');
 //========================
 
 let theScore = document.getElementById('theScore'); // updates score in header
-// let currentScore = 0; // should match score in header
+let currentScore = 0;
 // let hintPoints = 0; // point value of clickedHint
 let clickedHint; // this will change throughout the game (e.currentTarget/relatedTarget)
 
@@ -78,3 +78,35 @@ const findCorrectAnswer = (correct) => {
 		break;
 	}
 }
+
+const disable = (e) => {
+	e.classList.remove('clue');
+	e.classList.add('disabled');
+	e.innerHTML = '';
+}
+
+const finalAnswer = () => {
+	disable(clickedHint);
+
+	if (event.target.classList.contains('correct')) {
+		event.target.classList.remove('btn-primary');
+		event.target.classList.add('btn-win');
+		// addScore(parseInt(hintPoints.substring(1)));
+		$('#clueModal').modal('hide');
+		target.classList.remove('btn-win');
+		target.classList.add('btn-primary');
+	} else {
+		event.target.classList.remove('btn-primary');
+		event.target.classList.add('btn-lose');
+		// addScore(-parseInt(hintPoints.substring(1)));
+		$('#clueModal').modal('hide');
+		// target.classList.remove('btn-lose');
+		// target.classList.add('btn-primary');
+	}
+}
+
+// const addScore = (e) => {
+// 	currentScore = currentScore + e;
+// 	if (currentScore >= 0)
+//
+// }
