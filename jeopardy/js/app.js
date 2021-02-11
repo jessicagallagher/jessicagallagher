@@ -1,9 +1,3 @@
-/* i heavily relied on the following sources to help with using bootstrap modals that have varying modal content:
-
-1. https://getbootstrap.com/docs/5.0/components/modal/
-2. https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
-3. https://jsbin.com/atawaz/3/edit?html,output */
-
 /*
 [x] open modal on click
   - modal should then populate with the hint and the four answer options
@@ -11,14 +5,14 @@
 [x] close modal on submission of answer
   - that question should no longer be clickable
 
-[] check to see if answer is correct
+[x] check to see if answer is correct
   - if yes, add point value to score
   - if no, subtract point value to score
   - determine what the winning conditions are since the player isn't playing against the computer. should they answer ALL 30 questions?
 
 [x] have score update in real-time
 
-[] have a button to reset the entire game
+[x] have a button to reset the entire game
 */
 
 //==============================================
@@ -55,11 +49,9 @@ let hintPoints = 0; // this is the score of the clicked hints
 
 // opens modal on click
 const revealHint = (cluenames, clue) => {
-	// this function has to be called here because showing the modal isn't a function
 	populateModal(cluenames, clue);
 	$('#clueModal').modal('show');
 	// console.log('clicked'); just making sure it works
-	// console.log($(event.currentTarget)); making sure i'm on the right track for the next function
 }
 
 
@@ -125,18 +117,19 @@ const finalAnswer = () => {
 		showCorrectModal();
 		tallyScore(parseInt(hintPoints.substring(1)));
 
-
-
-
 	} else {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
 		// tallyScore(-parseInt(hintPoints.substring(1)));
 		showIncorrectModal();
 		tallyScore(-parseInt(hintPoints.substring(1)));
-
+		if (currentScore <= -9000) {
+			showGameOverModal();
+		}
 	}
+
 }
+
 
 const tallyScore = (e) => {
 	currentScore = currentScore + e;
@@ -167,6 +160,16 @@ const showIncorrectModal = (e) => {
 	})
 	$('#clueModal').modal('hide');
 	$('#incorrectModal').modal('show');
+}
+
+const showGameOverModal = (e) => {
+	let gameOverModal = document.getElementById('gameOverModal')
+	$('.btn-danger').on('click', (e) => {
+		// $('#gameOverModal').modal('hide');
+		location.reload(true);
+	})
+	$('#incorrectModal').modal('hide');
+	$('#gameOverModal').modal('show');
 }
 
 // const closeModal = () => {

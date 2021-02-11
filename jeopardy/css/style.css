@@ -81,7 +81,7 @@ h2, .updateScore {
   margin: 0 auto;
 }
 
-#points, #pointsHere, #correct, #incorrect, #lostPointsHere {
+#points, #pointsHere, #correct, #incorrect, #lostPointsHere, #lose {
   color: black;
   text-align: center;
 }
