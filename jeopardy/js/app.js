@@ -8,7 +8,7 @@
 [x] open modal on click
   - modal should then populate with the hint and the four answer options
 
-[] close modal on submission of answer
+[x] close modal on submission of answer
   - that question should no longer be clickable
 
 [] check to see if answer is correct
@@ -29,10 +29,10 @@
 
 let clueText = document.getElementById('clueText');
 let cluePoints = document.getElementById('points');
-let answer1 = document.getElementById('answer1');
-let answer2 = document.getElementById('answer2');
-let answer3 = document.getElementById('answer3');
-let answer4 = document.getElementById('answer4');
+let answerA = document.getElementById('answerA');
+let answerB = document.getElementById('answerB');
+let answerC = document.getElementById('answerC');
+let answerD = document.getElementById('answerD');
 let points = document.getElementById('points');
 
 //==============================================
@@ -69,10 +69,10 @@ const populateModal = (cluenames, clue) => {
 	points.innerHTML = '$' + 200 * clue;
 	// this is pulling the data from the key value pairs based on the "click coordinates"
 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
-	answer1.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer1;
-	answer2.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer2;
-	answer3.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer3;
-	answer4.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer4;
+	answerA.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerA;
+	answerB.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerB;
+	answerC.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerC;
+	answerD.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerD;
 	// this is assigning the correct answer based on the switch statement in the function
 	findCorrectAnswer(hints['cluenames' + cluenames]['clue' + clue].correct);
 	// assign the point value for the clicked hint --> we will need this to tally the score later
@@ -85,20 +85,20 @@ const populateModal = (cluenames, clue) => {
 const findCorrectAnswer = (correct) => {
 	// using switch statement to compare the value of the expression to the value of each case(aka trying to find a match between correct and the answer option)--break means there wasn't a match so move on: https://www.w3schools.com/js/js_switch.asp
 	switch (correct) {
-	case '1':
-		answer1.classList.add('correct');
+	case 'A':
+		answerA.classList.add('correct');
 		break;
 
-	case '2':
-		answer2.classList.add('correct');
+	case 'B':
+		answerB.classList.add('correct');
 		break;
 
-	case '3':
-		answer3.classList.add('correct');
+	case 'C':
+		answerC.classList.add('correct');
 		break;
 
-	case '4':
-		answer4.classList.add('correct');
+	case 'D':
+		answerD.classList.add('correct');
 		break;
 	default:
 		console.log('help') // never forget to test the switch statement. it wasn't working this entire time.
@@ -144,7 +144,7 @@ const tallyScore = (e) => {
 		updateScore.innerHTML = '$' + currentScore;
 	else
 		updateScore.innerHTML = '-$' + Math.abs(currentScore);
-
+	console.log(currentScore)
 }
 
 const showCorrectModal = (e) => {
@@ -173,14 +173,6 @@ const showIncorrectModal = (e) => {
 // 	$('#clueModal').modal('hide')
 // }
 
-
-// $('#clueModal').on('hidden.bs.modal', () => {
-// 	answer1.classList.remove('correct');
-// 	answer2.classList.remove('correct');
-// 	answer3.classList.remove('correct');
-// 	answer4.classList.remove('correct');
-// })
-
 // const tallyScoreSubtract = (e) => {
 // 	currentScore = currentScore - e;
 //
@@ -198,10 +190,10 @@ const showIncorrectModal = (e) => {
 
 // let clueText = document.getElementById('clueText');
 // let cluePoints = document.getElementById('points');
-// let answer1 = document.getElementById('answer1');
-// let answer2 = document.getElementById('answer2');
-// let answer3 = document.getElementById('answer3');
-// let answer4 = document.getElementById('answer4');
+// let answerA = document.getElementById('answerA');
+// let answerB = document.getElementById('answerB');
+// let answerC = document.getElementById('answerC');
+// let answerD = document.getElementById('answerD');
 // let updateScore = document.querySelector('.updateScore');
 //
 // //========================
@@ -226,10 +218,10 @@ const showIncorrectModal = (e) => {
 // 	cluePoints.innerHTML = '$' + numToPoints;
 // 	// cluePoints.innerHTML = hints['cluenames' + cluenames]['clue' + clue].points;
 // 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
-// 	answer1.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer1;
-// 	answer2.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer2;
-// 	answer3.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer3;
-// 	answer4.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answer4;
+// 	answerA.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerA;
+// 	answerB.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerB;
+// 	answerC.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerC;
+// 	answerD.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerD;
 // 	findCorrectAnswer(hints['cluenames' + cluenames]['clue' + clue].correct);
 // 	hintPoints = event.target.innerHTML;
 // 	console.log(hintPoints)
@@ -244,16 +236,16 @@ const showIncorrectModal = (e) => {
 // const findCorrectAnswer = (correct) => {
 // 	switch (correct) {
 // 	case '1':
-// 		answer1.classList.add('correct');
+// 		answerA.classList.add('correct');
 // 		break;
 // 	case '2':
-// 		answer2.classList.add('correct');
+// 		answerB.classList.add('correct');
 // 		break;
 // 	case '3':
-// 		answer3.classList.add('correct');
+// 		answerC.classList.add('correct');
 // 		break;
 // 	case '4':
-// 		answer4.classList.add('correct');
+// 		answerD.classList.add('correct');
 // 		break;
 // 	}
 // }
@@ -290,8 +282,8 @@ const showIncorrectModal = (e) => {
 // }
 //
 // // $('#clueModal').on('hidden.bs.modal', () => {
-// // 	answer1.classList.remove('correct');
-// // 	answer2.classList.remove('correct');
-// // 	answer3.classList.remove('correct');
-// // 	answer4.classList.remove('correct');
+// // 	answerA.classList.remove('correct');
+// // 	answerB.classList.remove('correct');
+// // 	answerC.classList.remove('correct');
+// // 	answerD.classList.remove('correct');
 // // });

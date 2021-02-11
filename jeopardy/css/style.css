@@ -67,7 +67,7 @@ h2, .updateScore {
   overflow-wrap: break-word;
 }
 
-/* modal */
+/* modals */
 .modal-content {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   /* source: webgradients.com */
@@ -81,39 +81,28 @@ h2, .updateScore {
   margin: 0 auto;
 }
 
-#points {
+#points, #pointsHere, #correct, #incorrect, #lostPointsHere {
   color: black;
   text-align: center;
 }
 
 h4 {
   color: black;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bolder;
   text-align: center;
 }
 
-#answer1, #answer2, #answer3, #answer4 {
+#answerA, #answerB, #answerC, #answerD, #continue {
   background-color: #ffcfdf;
   border: 1px solid white;
   color: black;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 10px;
 }
 
-#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+#answerA:hover, #answerB:hover, #answerC:hover, #answerD:hover {
   background-color: #fdffab;
 }
-
-/* .clue-button {
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 20px;
-  width: 65%;
-}
-
-.clue-button:hover {
-  background-color: #fdffab;
-} */
