@@ -101,7 +101,7 @@ const findCorrectAnswer = (correct) => {
 		answer4.classList.add('correct');
 		break;
 	default:
-		console.log('help')
+		console.log('help') // never forget to test the switch statement. it wasn't working this entire time.
 	}
 
 }
@@ -122,22 +122,14 @@ const finalAnswer = () => {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-success');
 		tallyScore(parseInt(hintPoints.substring(1)));
-		// setTimeout = (target) => {
-		// 	$('#clueModal').modal('hide');
-		// 	event.target.classList.remove('btn-success');
-		// 	event.target.classList.add('btn-primary');
-		// }, 1000, event.target;
+		closeModal();
 
 	} else {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
 		// tallyScore(-parseInt(hintPoints.substring(1)));
 		tallyScore(-parseInt(hintPoints.substring(1)));
-		// setTimeout = (target) => {
-		// 	$('#clueModal').modal('hide');
-		// 	event.target.classList.remove('btn-danger');
-		// 	event.target.classList.add('btn-primary');
-		// }, 1000, event.target;
+		closeModal();
 	}
 }
 
@@ -148,6 +140,10 @@ const tallyScore = (e) => {
 	else
 		updateScore.innerHTML = '-$' + Math.abs(currentScore);
 
+}
+
+const closeModal = () => {
+	$('#clueModal').modal('hide')
 }
 
 // $('#clueModal').on('hidden.bs.modal', () => {
