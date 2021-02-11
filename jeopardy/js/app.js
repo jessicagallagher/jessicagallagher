@@ -57,7 +57,7 @@ const revealHint = (cluenames, clue) => {
 
 // populate modal information dynamically
 const populateModal = (cluenames, clue) => {
-	// this is the easiest way to generate this on the modal. the values increase by 200.
+	// this is the easiest way to generate this on the modal. the values increase by 200. don't use a comma in 1000.
 	points.innerHTML = '$' + 200 * clue;
 	// this is pulling the data from the key value pairs based on the "click coordinates"
 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
@@ -75,7 +75,6 @@ const populateModal = (cluenames, clue) => {
 
 // assign the correct answer which will be called above so that we don't get undefined
 const findCorrectAnswer = (correct) => {
-	// using switch statement to compare the value of the expression to the value of each case(aka trying to find a match between correct and the answer option)--break means there wasn't a match so move on: https://www.w3schools.com/js/js_switch.asp
 	switch (correct) {
 	case 'A':
 		answerA.classList.add('correct');
@@ -93,12 +92,12 @@ const findCorrectAnswer = (correct) => {
 		answerD.classList.add('correct');
 		break;
 	default:
-		console.log('help') // never forget to test the switch statement. it wasn't working this entire time.
+		// console.log('help') never forget to test the switch statement. it wasn't working for an entire week.
 	}
 
 }
 
-// when the answer is submitted, we will want to disable the button so it can't be clicked again. we will call that function within the answer submission or else we will get undefined
+// when the answer is submitted, we will want to disable the button so it can't be clicked again.
 const disableButton = (event) => {
 	event.classList.add('disabled');
 	event.innerHTML = '';
@@ -106,10 +105,9 @@ const disableButton = (event) => {
 	event.onclick = '';
 }
 
-// at this point, all testing of each code block gives an error that is based on the onclick from the html, so we are on the right track
 
 const finalAnswer = () => {
-	disableButton(clickedHint); // saved and ran and the clicked button is now disabled
+	disableButton(clickedHint);
 	// we will need an if else statement here so that we can add and remove classes for the correct and incorrect answers for the score tally
 	if (event.target.classList.contains('correct')) {
 		event.target.classList.remove('btn-primary');
@@ -120,9 +118,9 @@ const finalAnswer = () => {
 	} else {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
-		// tallyScore(-parseInt(hintPoints.substring(1)));
 		showIncorrectModal();
 		tallyScore(-parseInt(hintPoints.substring(1)));
+		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
 		if (currentScore <= -9000) {
 			showGameOverModal();
 		}
@@ -130,16 +128,17 @@ const finalAnswer = () => {
 
 }
 
-
+// this was the easiest way to get the score to update so that the user sees it as a dollar amount, but the computer sees it as an integer
 const tallyScore = (e) => {
 	currentScore = currentScore + e;
 	if (currentScore >= 0)
 		updateScore.innerHTML = '$' + currentScore;
 	else
 		updateScore.innerHTML = '-$' + Math.abs(currentScore);
-	console.log(currentScore)
+	// console.log(currentScore) made sure it was working correctly
 }
 
+// continue gameplay after answering correctly
 const showCorrectModal = (e) => {
 	let correctModal = document.getElementById('correctModal');
 	let pointsHere = document.getElementById('pointsHere');
@@ -151,6 +150,7 @@ const showCorrectModal = (e) => {
 	$('#correctModal').modal('show');
 }
 
+// continue gameplay after answering incorrectly
 const showIncorrectModal = (e) => {
 	let incorrectModal = document.getElementById('incorrectModal');
 	let lostPointsHere = document.getElementById('lostPointsHere');
@@ -162,131 +162,13 @@ const showIncorrectModal = (e) => {
 	$('#incorrectModal').modal('show');
 }
 
+// ends gameplay after dropping below 9,000 points (half of the board's worth)
 const showGameOverModal = (e) => {
 	let gameOverModal = document.getElementById('gameOverModal')
 	$('.btn-danger').on('click', (e) => {
-		// $('#gameOverModal').modal('hide');
+		// forces the entire page to reload, resetting the game. would like to have a real reset button and a close button that disables the entire board in the future
 		location.reload(true);
 	})
 	$('#incorrectModal').modal('hide');
 	$('#gameOverModal').modal('show');
 }
-
-// const closeModal = () => {
-// 	$('#clueModal').modal('hide')
-// }
-
-// const tallyScoreSubtract = (e) => {
-// 	currentScore = currentScore - e;
-//
-// 	updateScore.innerHTML = '$' + currentScore;
-// 	// } else
-// 	// 	updateScore.innerHTML = '$' + Math.abs(currentScore);
-//
-// }
-
-//==============================================
-// variables for modal text updates
-// initiates game play by populating modals with
-// questions, point values, and answer options
-//==============================================
-
-// let clueText = document.getElementById('clueText');
-// let cluePoints = document.getElementById('points');
-// let answerA = document.getElementById('answerA');
-// let answerB = document.getElementById('answerB');
-// let answerC = document.getElementById('answerC');
-// let answerD = document.getElementById('answerD');
-// let updateScore = document.querySelector('.updateScore');
-//
-// //========================
-// // game-specific variables
-// //========================
-//
-// let clickedHint; // this will change throughout the game (e.currentTarget/relatedTarget)
-// let theScore = 0;
-// let hintPoints = 0;
-//
-// const revealHint = (cluenames, clue) => {
-// 	getTheClues(cluenames, clue);
-// 	$('#clueModal').modal('show');
-// 	// console.log('clicked') checked to see if it's actually working
-// }
-//
-// const getTheClues = (cluenames, clue) => {
-// 	// console.log(cluenames); checked to make sure it was showing the right cluename number from findTheCorrectAnswer
-// 	// numToPoints so that i could add a $ to the points to make it a string on the label
-// 	let numToPoints = hints['cluenames' + cluenames]['clue' + clue].points;
-// 	// console.log(numToPoints)
-// 	cluePoints.innerHTML = '$' + numToPoints;
-// 	// cluePoints.innerHTML = hints['cluenames' + cluenames]['clue' + clue].points;
-// 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
-// 	answerA.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerA;
-// 	answerB.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerB;
-// 	answerC.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerC;
-// 	answerD.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerD;
-// 	findCorrectAnswer(hints['cluenames' + cluenames]['clue' + clue].correct);
-// 	hintPoints = event.target.innerHTML;
-// 	console.log(hintPoints)
-// 	// let newPoints = parseInt(hintPoints.substring(1))
-// 	// console.log(newPoints)
-// 	clickedHint = event.target;
-// 	// console.log(event.target); making sure i have the right target to generate the score
-//
-// }
-//
-// // using switch statement to compare the value of the expression to the value of each case(aka trying to find a match between correct and the answer option)--break means there wasn't a match so move on: https://www.w3schools.com/js/js_switch.asp
-// const findCorrectAnswer = (correct) => {
-// 	switch (correct) {
-// 	case '1':
-// 		answerA.classList.add('correct');
-// 		break;
-// 	case '2':
-// 		answerB.classList.add('correct');
-// 		break;
-// 	case '3':
-// 		answerC.classList.add('correct');
-// 		break;
-// 	case '4':
-// 		answerD.classList.add('correct');
-// 		break;
-// 	}
-// }
-//
-// const disable = (e) => {
-// 	e.classList.remove('clue');
-// 	e.classList.add('disabled');
-// 	e.innerHTML = '';
-// }
-//
-// const finalAnswer = () => {
-// 	disable(clickedHint);
-// 	if (event.target.classList.contains('correct')) {
-// 		event.target.classList.remove('btn-primary');
-// 		event.target.classList.add('btn-win');
-// 		tallyScore(parseInt(hintPoints.substring(1)));
-// 		// console.log(hintPoints)
-// 		$('#clueModal').modal('hide');
-// 		target.classList.remove('btn-win');
-// 		target.classList.add('btn-primary');
-// 	} else {
-// 		$('#clueModal').modal('hide');
-// 		// target.classList.remove('btn-lose');
-// 		// target.classList.add('btn-primary');
-// 	}
-// }
-//
-// const tallyScore = (e) => {
-// 	score = score + e;
-// 	if (score >= 0)
-// 		updateScore.innerHTML = '$' + score;
-// 	else
-// 		updateScore.innerHTML = '$' + Math.abs(score);
-// }
-//
-// // $('#clueModal').on('hidden.bs.modal', () => {
-// // 	answerA.classList.remove('correct');
-// // 	answerB.classList.remove('correct');
-// // 	answerC.classList.remove('correct');
-// // 	answerD.classList.remove('correct');
-// // });
