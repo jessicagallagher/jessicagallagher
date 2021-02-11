@@ -44,10 +44,11 @@ h2 {
   cursor: pointer;
 }
 
-#theScore {
+.updateScore {
   font-family: inherit;
   font-size: 40px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .header-button {

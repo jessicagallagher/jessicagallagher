@@ -15,8 +15,8 @@ const hints = {
 			answer2: 'What are self-closing tags?',
 			answer3: 'What are elements that require alt-text?',
 			answer4: 'What are elements that should be included in a &lt;div&gt;?',
-			correct: 2,
-			points: 200
+			correct: '2'
+
 		},
 		clue2: {
 			clueText: 'This HTML element attribute is used for something that probably happens once or twice.',
@@ -24,8 +24,8 @@ const hints = {
 			answer2: 'What is unique?',
 			answer3: 'What is an id?',
 			answer4: 'What is a class?',
-			correct: 3,
-			points: 400
+			correct: '3'
+
 		},
 		clue3: {
 			clueText: 'This HTML tag allows a hyperlink.',
@@ -33,8 +33,8 @@ const hints = {
 			answer2: 'What is &lt;link&gt;',
 			answer3: 'What is &lt;src&gt;?',
 			answer4: 'What is &lt;href&gt;?',
-			correct: 1,
-			points: 600
+			correct: '1'
+
 		},
 		clue4: {
 			clueText: 'In HTML, a table is made of these elements.',
@@ -42,8 +42,8 @@ const hints = {
 			answer2: 'What is &lt;tb&gt;, &lt;td&gt;?',
 			answer3: 'What is &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;?',
 			answer4: 'What is &lt;table&gt;, &lt;h1&gt;, &lt;section&gt;?',
-			correct: 3,
-			points: 800
+			correct: '3'
+
 		},
 		clue5: {
 			clueText: 'This element is an inline container used to mark up only part of a text.',
@@ -51,8 +51,8 @@ const hints = {
 			answer2: 'What is &lt;section&gt;?',
 			answer3: 'What is &lt;span&gt;?',
 			answer4: 'What is &lt;style&gt;?',
-			correct: 3,
-			points: 1000
+			correct: '3'
+
 		}
 	},
 	// css category
@@ -64,8 +64,8 @@ const hints = {
 			answer2: 'What are attributes required for every selector?',
 			answer3: 'What are properties considered necessary for Flexbox?',
 			answer4: 'What are attributes that all mean the same thing?',
-			correct: 1,
-			points: 200
+			correct: '1'
+
 		},
 		clue2: {
 			clueText: 'This CSS property allows you to identify which type of font you\'d like to use.',
@@ -73,8 +73,8 @@ const hints = {
 			answer2: 'What is font-style?',
 			answer3: 'What is text?',
 			answer4: 'What is font-family?',
-			correct: 4,
-			points: 400
+			correct: '4'
+
 		},
 		clue3: {
 			clueText: 'This CSS property improves a browser\'s handling of small windows.',
@@ -82,8 +82,8 @@ const hints = {
 			answer2: 'What is position?',
 			answer3: 'What is max-width?',
 			answer4: 'What is display?',
-			correct: 3,
-			points: 600
+			correct: '3'
+
 		},
 		clue4: {
 			clueText: 'The opacity property specifies the transparency of an element. It takes one of these values.',
@@ -91,8 +91,8 @@ const hints = {
 			answer2: 'What is any integer?',
 			answer3: 'What are positive numbers only?',
 			answer4: 'What are numbers between 0 - 100?',
-			correct: 1,
-			points: 800
+			correct: '1'
+
 		},
 		clue5: {
 			clueText: 'This type of display allows you to set the width, height, margin, and padding of an element, while allowing that element to sit next to other elements.',
@@ -100,8 +100,7 @@ const hints = {
 			answer2: 'What is block?',
 			answer3: 'What is grid?',
 			answer4: 'What is flex?',
-			correct: 1,
-			points: 1000
+			correct: '1'
 		},
 	},
 	// javascript category
@@ -113,8 +112,8 @@ const hints = {
 			answer2: 'What is false?',
 			answer3: 'What is true?',
 			answer4: 'What is the incorrect way to use a boolean?',
-			correct: 3,
-			points: 200
+			correct: '3'
+
 		},
 		clue2: {
 			clueText: 'This type of operator description let\'s you determine whether there\'s a remainder.',
@@ -122,8 +121,8 @@ const hints = {
 			answer2: 'What is division?',
 			answer3: 'What is decrement?',
 			answer4: 'What is combining division and subtraction?',
-			correct: 1,
-			points: 400
+			correct: '1'
+
 		},
 		clue3: {
 			clueText: 'This type of loop is a great choice to use if you already know how many times you need to loop through something.',
@@ -131,8 +130,8 @@ const hints = {
 			answer2: 'What is a For loop?',
 			answer3: 'What is a While loop?',
 			answer4: 'What is a For Of loop?',
-			correct: 2,
-			points: 600
+			correct: '2'
+
 		},
 		clue4: {
 			clueText: 'This JavaScript object can be used to hold multiple objects, including itself.',
@@ -140,8 +139,8 @@ const hints = {
 			answer2: 'What is an object key?',
 			answer3: 'What are key value pairs?',
 			answer4: 'What is an object literal?',
-			correct: 1,
-			points: 800
+			correct: '1'
+
 		},
 		clue5: {
 			clueText: 'In the context of the most recent version of JavaScript, this variable declaration allows you to redeclare the variable later.',
@@ -149,8 +148,8 @@ const hints = {
 			answer2: 'What is const?',
 			answer3: 'What is let?',
 			answer4: 'What are both const and let?',
-			correct: 3,
-			points: 1000
+			correct: '3'
+
 		},
 	},
 	// cli category
@@ -162,8 +161,8 @@ const hints = {
 			answer2: 'What is ls?',
 			answer3: 'What is ls -l?',
 			answer4: 'What is ls ~?',
-			correct: 1,
-			points: 200
+			correct: '1'
+
 		},
 		clue2: {
 			clueText: 'This command removes a directory and everything in it.',
@@ -171,8 +170,8 @@ const hints = {
 			answer2: 'What is rm?',
 			answer3: 'What is rmdir?',
 			answer4: 'What is rm -r?',
-			correct: 4,
-			points: 400
+			correct: '4'
+
 		},
 		clue3: {
 			clueText: 'This command will print your file.',
@@ -180,8 +179,8 @@ const hints = {
 			answer2: 'What is cat?',
 			answer3: 'What is touch-print?',
 			answer4: 'What is print &lt;file&gt;?',
-			correct: 2,
-			points: 600
+			correct: '2'
+
 		},
 		clue4: {
 			clueText: 'This command moves a file or folder into another folder that\'s in the same directory.',
@@ -189,8 +188,8 @@ const hints = {
 			answer2: 'What is cp?',
 			answer3: 'What is mvdir?',
 			answer4: 'What is mv -dir?',
-			correct: 1,
-			points: 800
+			correct: '1'
+
 		},
 		clue5: {
 			clueText: 'To infinity and beyond! This command stops a program from running when you\'ve written an infinite loop.',
@@ -198,8 +197,8 @@ const hints = {
 			answer2: 'What is CTRL ALT DELETE?',
 			answer3: 'What is CMD F?',
 			answer4: 'What is ESC?',
-			correct: 1,
-			points: 1000
+			correct: '1'
+
 		},
 	},
 	// github category
@@ -211,8 +210,8 @@ const hints = {
 			answer2: 'What is git status?',
 			answer3: 'What is git help?',
 			answer4: 'What is git init?',
-			correct: 2,
-			points: 200
+			correct: '2'
+
 		},
 		clue2: {
 			clueText: 'This is one way to turn an existing directory into a Git repository.',
@@ -220,8 +219,8 @@ const hints = {
 			answer2: 'What is git --setup &lt;file&gt;',
 			answer3: 'What is git clone (URL)?',
 			answer4: 'What is git log?',
-			correct: 1,
-			points: 400
+			correct: '1'
+
 		},
 		clue3: {
 			clueText: 'This command will grab all the commits from the remote branch and merge them into your own branch.',
@@ -229,8 +228,8 @@ const hints = {
 			answer2: 'What is fetch?',
 			answer3: 'What is merge?',
 			answer4: 'What is pull?',
-			correct: 4,
-			points: 600
+			correct: '4'
+
 		},
 		clue4: {
 			clueText: 'This command is important when considering version control.',
@@ -238,8 +237,8 @@ const hints = {
 			answer2: 'What is git config?',
 			answer3: 'What is git commit?',
 			answer4: 'What is git push?',
-			correct: 3,
-			points: 800
+			correct: '3'
+
 		},
 		clue5: {
 			clueText: 'This request alerts the original owner of a repository that you\'ve made changes to their code that might be beneficial.',
@@ -247,8 +246,8 @@ const hints = {
 			answer2: 'What is a fork request?',
 			answer3: 'What is a pull request?',
 			answer4: 'What is a commit request?',
-			correct: 3,
-			points: 1000
+			correct: '3'
+
 		},
 	},
 	// lolz category
@@ -260,8 +259,8 @@ const hints = {
 			answer2: 'What is Rubber Duck coding?',
 			answer3: 'What is a catchy tune?',
 			answer4: 'What is something that doesn\'t make sense to me?',
-			correct: 2,
-			points: 200
+			correct: '2'
+
 		},
 		clue2: {
 			clueText: 'In the context of programming, they don\'t die, they multiply!',
@@ -269,8 +268,8 @@ const hints = {
 			answer2: 'What are bugs?',
 			answer3: 'What are chores?',
 			answer4: 'What are breakpoints?',
-			correct: 2,
-			points: 400
+			correct: '2'
+
 		},
 		clue3: {
 			clueText: 'Regina George would NOT be happy about this GitHub term... so stop trying to make it happen!',
@@ -278,8 +277,8 @@ const hints = {
 			answer2: 'What is merge?',
 			answer3: 'What is upstream?',
 			answer4: 'What is master?',
-			correct: 1,
-			points: 600
+			correct: '1'
+
 		},
 		clue4: {
 			clueText: 'This character has been the hide and seek champion since 1958.',
@@ -287,8 +286,8 @@ const hints = {
 			answer2: 'What is the closing curly bracket?',
 			answer3: 'What is the semicolon?',
 			answer4: 'What is the dollar sign?',
-			correct: 3,
-			points: 800
+			correct: '3'
+
 		},
 		clue5: {
 			clueText: 'This word is used by programmers when they don\'t want to explain what they just did. Richard Hendricks supposedly wrote one with 10 parentheses.',
@@ -296,8 +295,8 @@ const hints = {
 			answer2: 'What is a nest arrow function?',
 			answer3: 'What is a nested loop?',
 			answer4: 'What is a RegExp?',
-			correct: 1,
-			points: 1000
+			correct: '1'
+
 		},
 	}
 }

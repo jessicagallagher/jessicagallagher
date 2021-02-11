@@ -23,7 +23,8 @@
   </div>
   <div class="score container-fluid mx-auto my-4 d-flex justify-content-center">
     <div class="current-score">
-      <h2>Your Current Score Is:<span id="theScore"></span></h2>
+      <h2>Your Current Score Is:</h2>
+      <h2 class="updateScore">0</h2>
 
     </div>
 
@@ -95,8 +96,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="points">Points</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">X</span>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
           </button>
         </div>
         <div class="modal-body">
@@ -106,15 +106,43 @@
             </div>
           </div>
           <div class="d-flex flex-column py-3">
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer1" onclick="finalAnswer()">Answer 1</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer2" onclick="finalAnswer()">Answer 2</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer3" onclick="finalAnswer()">Answer 3</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="answer4" onclick="finalAnswer()">Answer 4</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer1" onclick="finalAnswer()">Answer 1</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer2" onclick="finalAnswer()">Answer 2</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer3" onclick="finalAnswer()">Answer 3</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer4" onclick="finalAnswer()">Answer 4</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- correct answer modal -->
+  <!-- <div class="modal fade" id="correct staticBackdrop" data-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="response-modal">CORRECT!</h1>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-success" data-dismiss="modal">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- incorrect answer modal -->
+  <!-- <div class="modal fade" id="incorrect staticBackdrop" data-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="response-modal">WRONG!</h1>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div> --> -->
 
 
 
