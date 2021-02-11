@@ -50,11 +50,11 @@ What are you waiting for? Check it out [here](https://jessicagallagher.github.io
 
 ## :ice_cube: Coming Soon
 
-\[] Responsive design improvements
-\[] Accessibility improvements
-\[] An option to disable the entire game
-\[] A true reset button
-\[] AI
-\[] Sound effects
-\[] Real-time two-player mode
-\[] Create your own gameboard 
+- [ ] Responsive design improvements
+- [ ] Accessibility improvements
+- [ ] An option to disable the entire game
+- [ ] A true reset button
+- [ ] AI
+- [ ] Sound effects
+- [ ] Real-time two-player mode
+- [ ] Create your own gameboard 
