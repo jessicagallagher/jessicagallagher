@@ -21,7 +21,7 @@ const hints = {
 		},
 		clue2: {
 			clueText: 'This HTML element attribute is used for something that probably happens once or twice.',
-			correct: 'D',
+			correct: 'C',
 			answerA: 'What is an aside?',
 			answerB: 'What is unique?',
 			answerC: 'What is an id?',
