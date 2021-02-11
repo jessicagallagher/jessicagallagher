@@ -92,12 +92,11 @@
 
   <!-- clue modal -->
   <div class="modal fade" tabindex="-1" role="dialog" id="clueModal">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="points">Points</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-          </button>
+
         </div>
         <div class="modal-body">
           <div class="d-flex flex-row">
@@ -106,43 +105,57 @@
             </div>
           </div>
           <div class="d-flex flex-column py-3">
-            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer1" onclick="finalAnswer()">Answer 1</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer2" onclick="finalAnswer()">Answer 2</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer3" onclick="finalAnswer()">Answer 3</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal" id="answer4" onclick="finalAnswer()">Answer 4</button>
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" id="answer1" onclick="finalAnswer()">Answer 1</button>
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" id="answer2" onclick="finalAnswer()">Answer 2</button>
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" id="answer3" onclick="finalAnswer()">Answer 3</button>
+            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal" id="answer4" onclick="finalAnswer()">Answer 4</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- correct answer modal -->
-  <!-- <div class="modal fade" id="correct staticBackdrop" data-backdrop="static" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" tabindex="-1" role="dialog" id="correctModal">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="response-modal">CORRECT!</h1>
-        </div>
-        <div class="modal-footer">
+          <h5 class="modal-title" id="correct">HOORAY!</h5>
 
-          <button type="button" class="btn btn-success" data-dismiss="modal">Continue</button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-row">
+            <div class="ml-3 mt-2 align-items-center">
+              <h4 id="pointsHere">Points Here</h4>
+            </div>
+          </div>
+          <div class="d-flex flex-column py-3">
+            <button type="button" class="btn btn-success btn-primary btn-block" data-dismiss="modal" id="continue">Continue</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- incorrect answer modal -->
-  <!-- <div class="modal fade" id="incorrect staticBackdrop" data-backdrop="static" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" tabindex="-1" role="dialog" id="incorrectModal">
+    <div class="modal-dialog modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="response-modal">WRONG!</h1>
-        </div>
-        <div class="modal-footer">
+          <h5 class="modal-title" id="incorrect">BOO!</h5>
 
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Continue</button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-row">
+            <div class="ml-3 mt-2 align-items-center">
+              <h4 id="lostPointsHere">Points Here</h4>
+            </div>
+          </div>
+          <div class="d-flex flex-column py-3">
+            <button type="button" class="btn btn-danger btn-primary btn-block" data-dismiss="modal" id="continue">Continue</button>
+          </div>
         </div>
       </div>
     </div>
-  </div> --> -->
+  </div>
 
 
 

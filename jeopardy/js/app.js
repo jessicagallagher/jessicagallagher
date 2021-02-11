@@ -108,9 +108,10 @@ const findCorrectAnswer = (correct) => {
 
 // when the answer is submitted, we will want to disable the button so it can't be clicked again. we will call that function within the answer submission or else we will get undefined
 const disableButton = (event) => {
-	event.classList.remove('clue');
 	event.classList.add('disabled');
 	event.innerHTML = '';
+	event.style.cursor = 'not-allowed';
+	event.onclick = '';
 }
 
 // at this point, all testing of each code block gives an error that is based on the onclick from the html, so we are on the right track
@@ -121,15 +122,19 @@ const finalAnswer = () => {
 	if (event.target.classList.contains('correct')) {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-success');
+		showCorrectModal();
 		tallyScore(parseInt(hintPoints.substring(1)));
-		closeModal();
+
+
+
 
 	} else {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
 		// tallyScore(-parseInt(hintPoints.substring(1)));
+		showIncorrectModal();
 		tallyScore(-parseInt(hintPoints.substring(1)));
-		closeModal();
+
 	}
 }
 
@@ -142,9 +147,32 @@ const tallyScore = (e) => {
 
 }
 
-const closeModal = () => {
-	$('#clueModal').modal('hide')
+const showCorrectModal = (e) => {
+	let correctModal = document.getElementById('correctModal');
+	let pointsHere = document.getElementById('pointsHere');
+	pointsHere.innerHTML = 'You earned $' + parseInt(hintPoints.substring(1)) + '!';
+	$('.btn-success').on('click', (e) => {
+		$('#correctModal').modal('hide');
+	})
+	$('#clueModal').modal('hide');
+	$('#correctModal').modal('show');
 }
+
+const showIncorrectModal = (e) => {
+	let incorrectModal = document.getElementById('incorrectModal');
+	let lostPointsHere = document.getElementById('lostPointsHere');
+	lostPointsHere.innerHTML = 'You lost $' + parseInt(hintPoints.substring(1)) + '!';
+	$('.btn-danger').on('click', (e) => {
+		$('#incorrectModal').modal('hide');
+	})
+	$('#clueModal').modal('hide');
+	$('#incorrectModal').modal('show');
+}
+
+// const closeModal = () => {
+// 	$('#clueModal').modal('hide')
+// }
+
 
 // $('#clueModal').on('hidden.bs.modal', () => {
 // 	answer1.classList.remove('correct');
