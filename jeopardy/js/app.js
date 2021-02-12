@@ -94,7 +94,7 @@ const findCorrectAnswer = (correct) => {
 		answerD.classList.add('correct');
 		break;
 	default:
-		// console.log('help') never forget to test the switch statement. it wasn't working for an entire week. credit to Raahima for pointing this out.
+		console.log('help') /*never forget to test the switch statement. it wasn't working for an entire week. credit to Raahima for pointing this out.*/
 	}
 
 }
