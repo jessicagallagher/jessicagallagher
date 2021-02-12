@@ -121,7 +121,7 @@ const finalAnswer = () => {
 		showIncorrectModal();
 		tallyScore(-parseInt(hintPoints.substring(1)));
 		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
-		if (currentScore <= -1000) {
+		if (currentScore <= -9000) {
 			showGameOverModal();
 		}
 	}
