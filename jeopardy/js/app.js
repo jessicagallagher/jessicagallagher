@@ -29,7 +29,7 @@ let points = document.getElementById('points');
 // this allows the score to update in the header
 //==============================================
 
-let updateScore = document.querySelector('.updateScore')
+let updateScore = document.querySelector('.updateScore') // this needs to be reworked
 
 //========================
 // game-specific variables
@@ -55,7 +55,7 @@ const revealHint = (cluenames, clue) => {
 // https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 // https://jsbin.com/atawaz/3/edit?html,output
 const populateModal = (cluenames, clue) => {
-	// this is the easiest way to generate this on the modal. the values increase by 200. don't use a comma in 1000.
+	// this is the easiest way to generate this on the modal. the values increase by 200. don't use a comma in 1000. this is all about what the user sees--it's complicating things.
 	points.innerHTML = '$' + 200 * clue;
 	// this is pulling the data from the key value pairs based on the "click coordinates"
 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
@@ -71,7 +71,7 @@ const populateModal = (cluenames, clue) => {
 	clickedHint = event.target;
 }
 
-// assign the correct answer which will be called above so that we don't get undefined -- not sure why this only works with letters as a string. it didn't work with numbers as a string.
+// assign the correct answer which will be called above so that we don't get undefined -- not sure why this only works with letters as a string. it didn't work with numbers as a string. i still don't think this is working properly. it almost seems at random. would like to use a for loop in next iteration. i have tried this with the case as an integer and a string and it's not 100% accurate.
 const findCorrectAnswer = (correct) => {
 	switch (correct) {
 	case 'A':
@@ -101,7 +101,7 @@ const disableButton = (event) => {
 	event.innerHTML = '';
 	event.style.cursor = 'not-allowed';
 	event.onclick = '';
-}
+} // would like to figure out how to get the hover to stop when it's disabled. added way too many features.
 
 
 const finalAnswer = () => {
@@ -112,12 +112,13 @@ const finalAnswer = () => {
 		event.target.classList.add('btn-success');
 		showCorrectModal();
 		tallyScore(parseInt(hintPoints.substring(1)));
+		// in the future, one way to truly win the game could be document.querySelectorAll('.disabled').length. if it's === 30, then game over.
 
 	} else {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
 		showIncorrectModal();
-		tallyScore(-parseInt(hintPoints.substring(1)));
+		tallyScore(-parseInt(hintPoints.substring(1))); // -parstInt because we need to subtract, but see more deets below in the function. this is all about what the user sees.
 		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
 		if (currentScore <= -9000) {
 			showGameOverModal();
@@ -126,13 +127,13 @@ const finalAnswer = () => {
 
 }
 
-// this was the easiest way to get the score to update so that the user sees it as a dollar amount, but the computer sees it as an integer
+// this was the easiest way to get the score to update so that the user sees it as a dollar amount, but the computer sees it as an integer.
 const tallyScore = (e) => {
 	currentScore = currentScore + e;
 	if (currentScore >= 0)
 		updateScore.innerHTML = '$' + currentScore;
 	else
-		updateScore.innerHTML = '-$' + Math.abs(currentScore);
+		updateScore.innerHTML = '-$' + Math.abs(currentScore); // this was the only way to have the negative sign appear in front of the dollar sign rather than having $-200. updateScore was too much work.
 	// console.log(currentScore) made sure it was working correctly
 }
 

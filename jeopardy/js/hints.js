@@ -4,6 +4,7 @@
 // cli question source: https://medium.com/@jennyjudova/command-line-cheat-sheet-mac-linux-f6f669f07a78
 // github question source: https://education.github.com/git-cheat-sheet-education.pdf
 // lolz question source: https://medium.com/better-programming/101-funny-programmer-quotes-76c7f335b92d
+// this should go back into an array in the future. i think this is creating a bug to find the correct answer
 
 const hints = {
 	// html category
