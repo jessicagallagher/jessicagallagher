@@ -121,7 +121,7 @@ const finalAnswer = () => {
 		showIncorrectModal();
 		tallyScore(-parseInt(hintPoints.substring(1)));
 		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
-		if (currentScore <= -9000) {
+		if (currentScore <= -1000) {
 			showGameOverModal();
 		}
 	}
@@ -166,8 +166,7 @@ const showIncorrectModal = (e) => {
 const showGameOverModal = (e) => {
 	let gameOverModal = document.getElementById('gameOverModal')
 	$('.btn-danger').on('click', (e) => {
-		// forces the entire page to reload, resetting the game. would like to have a real reset button and a close button that disables the entire board in the future
-		location.reload(true);
+		// real reset button here one day
 	})
 	$('#incorrectModal').modal('hide');
 	$('#gameOverModal').modal('show');
