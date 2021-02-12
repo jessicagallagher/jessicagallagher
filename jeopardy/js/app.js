@@ -56,6 +56,8 @@ const revealHint = (cluenames, clue) => {
 
 
 // populate modal information dynamically
+// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+// https://jsbin.com/atawaz/3/edit?html,output
 const populateModal = (cluenames, clue) => {
 	// this is the easiest way to generate this on the modal. the values increase by 200. don't use a comma in 1000.
 	points.innerHTML = '$' + 200 * clue;
@@ -73,7 +75,7 @@ const populateModal = (cluenames, clue) => {
 	clickedHint = event.target;
 }
 
-// assign the correct answer which will be called above so that we don't get undefined
+// assign the correct answer which will be called above so that we don't get undefined -- not sure why this only works with letters as a string. it didn't work with numbers as a string.
 const findCorrectAnswer = (correct) => {
 	switch (correct) {
 	case 'A':
@@ -92,7 +94,7 @@ const findCorrectAnswer = (correct) => {
 		answerD.classList.add('correct');
 		break;
 	default:
-		// console.log('help') never forget to test the switch statement. it wasn't working for an entire week.
+		// console.log('help') never forget to test the switch statement. it wasn't working for an entire week. credit to Raahima for pointing this out.
 	}
 
 }
