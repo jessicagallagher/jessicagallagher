@@ -1,17 +1,13 @@
 /*
 [x] open modal on click
   - modal should then populate with the hint and the four answer options
-
 [x] close modal on submission of answer
   - that question should no longer be clickable
-
 [x] check to see if answer is correct
   - if yes, add point value to score
   - if no, subtract point value to score
   - determine what the winning conditions are since the player isn't playing against the computer. should they answer ALL 30 questions?
-
 [x] have score update in real-time
-
 [x] have a button to reset the entire game
 */
 
@@ -94,7 +90,7 @@ const findCorrectAnswer = (correct) => {
 		answerD.classList.add('correct');
 		break;
 	default:
-		console.log('help') /*never forget to test the switch statement. it wasn't working for an entire week. credit to Raahima for pointing this out.*/
+		// console.log('help') never forget to test the switch statement. it wasn't working for an entire week. credit to Raahima for pointing this out.
 	}
 
 }
