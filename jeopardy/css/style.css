@@ -23,14 +23,14 @@ h2, .updateScore {
   text-align: center;
 }
 
-.cluenames {
-  border: 1px solid #fdffab;
+.cluenames, .clue {
   border-radius: 5px;
+  font-size: 36px;
+  font-weight: bolder;
   height: 50px;
   width: 120px;
 }
 
-<<<<<<< HEAD
 .cluenames {
   border: 3px dotted #f9ed69;
 }
@@ -47,12 +47,6 @@ h2, .updateScore {
   box-shadow: 3px 3px #f9ed69;
   color: black;
   cursor: pointer;
-=======
-#theScore {
-  font-family: inherit;
-  font-size: 40px;
-  font-weight: bolder;
->>>>>>> parent of 40622ef... modals are closing, buttons are disabled, styling is perfect, still need to get the score to update
 }
 
 .header-button {
@@ -73,17 +67,7 @@ h2, .updateScore {
   overflow-wrap: break-word;
 }
 
-<<<<<<< HEAD
 /* modals */
-=======
-.cluenames {
-  font-size: 36px;
-  font-weight: bolder;
-  margin-top: 20px;
-}
-
-/* modal */
->>>>>>> parent of 40622ef... modals are closing, buttons are disabled, styling is perfect, still need to get the score to update
 .modal-content {
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   /* source: webgradients.com */

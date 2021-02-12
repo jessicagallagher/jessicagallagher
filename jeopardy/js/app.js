@@ -39,16 +39,9 @@ let updateScore = document.querySelector('.updateScore')
 // game-specific variables
 //========================
 
-<<<<<<< HEAD
 let clickedHint; // this variable will change because it stands for the actual gameboard piece that was clicked
 let currentScore = 0; // this is the true current score of the game at the start
 let hintPoints = 0; // this is the score of the clicked hints
-=======
-let theScore = document.getElementById('theScore'); // updates score in header
-// let currentScore = 0; // should match score in header
-// let hintPoints = 0; // point value of clickedHint
-let clickedHint; // this will change throughout the game (e.currentTarget/relatedTarget)
->>>>>>> parent of 40622ef... modals are closing, buttons are disabled, styling is perfect, still need to get the score to update
 
 //==========
 // functions
@@ -105,7 +98,6 @@ const findCorrectAnswer = (correct) => {
 	}
 
 }
-<<<<<<< HEAD
 
 // when the answer is submitted, we will want to disable the button so it can't be clicked again.
 const disableButton = (event) => {
@@ -181,5 +173,3 @@ const showGameOverModal = (e) => {
 	$('#incorrectModal').modal('hide');
 	$('#gameOverModal').modal('show');
 }
-=======
->>>>>>> parent of 40622ef... modals are closing, buttons are disabled, styling is perfect, still need to get the score to update
