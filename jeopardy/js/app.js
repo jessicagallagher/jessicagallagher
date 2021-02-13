@@ -99,9 +99,7 @@ const findCorrectAnswer = (correct) => {
 const disableButton = (event) => {
 	event.classList.add('disabled');
 	event.innerHTML = '';
-	event.style.cursor = 'not-allowed';
-	event.onclick = '';
-} // would like to figure out how to get the hover to stop when it's disabled. added way too many features.
+}
 
 
 const finalAnswer = () => {

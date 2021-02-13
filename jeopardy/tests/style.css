@@ -49,6 +49,10 @@ h2, .updateScore {
   cursor: pointer;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 .header-button {
   background-color: white;
   border: 1px solid black;
