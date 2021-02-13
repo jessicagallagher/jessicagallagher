@@ -57,7 +57,7 @@ const revealHint = (cluenames, clue) => {
 const populateModal = (cluenames, clue) => {
 	// this is the easiest way to generate this on the modal. the values increase by 200. don't use a comma in 1000. this is all about what the user sees--it's complicating things.
 	points.innerHTML = '$' + 200 * clue;
-	// this is pulling the data from the key value pairs based on the "click coordinates"
+	// this is pulling the data from the key value pairs based on the "click coordinates in the html"
 	clueText.innerHTML = hints['cluenames' + cluenames]['clue' + clue].clueText;
 	answerA.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerA;
 	answerB.innerHTML = hints['cluenames' + cluenames]['clue' + clue].answerB;
@@ -71,7 +71,7 @@ const populateModal = (cluenames, clue) => {
 	clickedHint = event.target;
 }
 
-// assign the correct answer which will be called above so that we don't get undefined -- not sure why this only works with letters as a string. it didn't work with numbers as a string. i still don't think this is working properly. it almost seems at random. would like to use a for loop in next iteration. i have tried this with the case as an integer and a string and it's not 100% accurate.
+// assign the class of correct to the correct answer which will be called above so that we don't get undefined -- not sure why this only works with letters as a string. it didn't work with numbers as a string. would like to use a for loop in next iteration and step outside my comfort zone. this was the easy way out but ended up causing a lot of problems.
 const findCorrectAnswer = (correct) => {
 	switch (correct) {
 	case 'A':
@@ -144,6 +144,11 @@ const showCorrectModal = (e) => {
 	pointsHere.innerHTML = 'You earned $' + parseInt(hintPoints.substring(1)) + '!';
 	$('.btn-success').on('click', (e) => {
 		$('#correctModal').modal('hide');
+		// this has to happen every time a modal closes or else it will add correct to the class of the old correct answer to the new modal. AKA if A was correct the first time, A will be correct the second time in addition to whatever the correct answer actually is. there was never anything wrong with the switch statement.
+		answerA.classList.remove('correct');
+		answerB.classList.remove('correct');
+		answerC.classList.remove('correct');
+		answerD.classList.remove('correct');
 	})
 	$('#clueModal').modal('hide');
 	$('#correctModal').modal('show');
@@ -156,6 +161,10 @@ const showIncorrectModal = (e) => {
 	lostPointsHere.innerHTML = 'You lost $' + parseInt(hintPoints.substring(1)) + '!';
 	$('.btn-danger').on('click', (e) => {
 		$('#incorrectModal').modal('hide');
+		answerA.classList.remove('correct');
+		answerB.classList.remove('correct');
+		answerC.classList.remove('correct');
+		answerD.classList.remove('correct');
 	})
 	$('#clueModal').modal('hide');
 	$('#incorrectModal').modal('show');

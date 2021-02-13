@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+
+body {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  /* source: webgradients.com */
+  color: white;
+  font-family: 'Pompiere', cursive, 'sans-serif';
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+h2, .updateScore {
+  color: white;
+  font-family: 'Kranky', cursive, 'sans serif';
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.cluenames, .clue {
+  border-radius: 5px;
+  font-size: 36px;
+  font-weight: bolder;
+  height: 50px;
+  width: 120px;
+}
+
+.cluenames {
+  border: 3px dotted #f9ed69;
+}
+
+.clue {
+  border: 2px solid #f9ed69;
+  box-shadow: 3px 3px;
+}
+
+.clue:hover {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  /* source: webgradients.com */
+  border: 2px solid white;
+  box-shadow: 3px 3px #f9ed69;
+  color: black;
+  cursor: pointer;
+}
+
+.header-button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 10%;
+}
+
+.header-button:hover {
+  background-color: #ffcfdf;
+}
+
+.header {
+  display: inline;
+  font-family: 'Kranky', cursive, 'sans serif';
+  overflow-wrap: break-word;
+}
+
+/* modals */
+.modal-content {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  /* source: webgradients.com */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-title {
+  font-size: 36px;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+#points, #pointsHere, #correct, #incorrect, #lostPointsHere, #lose {
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#answerA, #answerB, #answerC, #answerD, #continue {
+  background-color: #ffcfdf;
+  border: 1px solid white;
+  color: black;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#answerA:hover, #answerB:hover, #answerC:hover, #answerD:hover {
+  background-color: #fdffab;
+}

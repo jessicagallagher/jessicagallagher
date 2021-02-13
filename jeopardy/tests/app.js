@@ -1,3 +1,6 @@
+console.log('hello')
+
+
 /*
 [x] open modal on click
   - modal should then populate with the hint and the four answer options
@@ -100,7 +103,7 @@ const disableButton = (event) => {
 	event.classList.add('disabled');
 	event.innerHTML = '';
 	event.style.cursor = 'not-allowed';
-	event.onclick = '';
+	event.onclick = ''; // this makes it not clickable!
 } // would like to figure out how to get the hover to stop when it's disabled. added way too many features.
 
 
@@ -111,6 +114,8 @@ const finalAnswer = () => {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-success');
 		showCorrectModal();
+
+
 		tallyScore(parseInt(hintPoints.substring(1)));
 		// in the future, one way to truly win the game could be document.querySelectorAll('.disabled').length. if it's === 30, then game over.
 
@@ -118,6 +123,7 @@ const finalAnswer = () => {
 		event.target.classList.remove('btn-primary');
 		event.target.classList.add('btn-danger');
 		showIncorrectModal();
+
 		tallyScore(-parseInt(hintPoints.substring(1))); // -parstInt because we need to subtract, but see more deets below in the function. this is all about what the user sees.
 		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
 		if (currentScore <= -9000) {
@@ -137,6 +143,8 @@ const tallyScore = (e) => {
 	// console.log(currentScore) made sure it was working correctly
 }
 
+
+
 // continue gameplay after answering correctly
 const showCorrectModal = (e) => {
 	let correctModal = document.getElementById('correctModal');
@@ -144,7 +152,12 @@ const showCorrectModal = (e) => {
 	pointsHere.innerHTML = 'You earned $' + parseInt(hintPoints.substring(1)) + '!';
 	$('.btn-success').on('click', (e) => {
 		$('#correctModal').modal('hide');
+		answerA.classList.remove('correct');
+		answerB.classList.remove('correct');
+		answerC.classList.remove('correct');
+		answerD.classList.remove('correct');
 	})
+
 	$('#clueModal').modal('hide');
 	$('#correctModal').modal('show');
 }
@@ -156,6 +169,11 @@ const showIncorrectModal = (e) => {
 	lostPointsHere.innerHTML = 'You lost $' + parseInt(hintPoints.substring(1)) + '!';
 	$('.btn-danger').on('click', (e) => {
 		$('#incorrectModal').modal('hide');
+		answerA.classList.remove('correct');
+		answerB.classList.remove('correct');
+		answerC.classList.remove('correct');
+		answerD.classList.remove('correct');
+
 	})
 	$('#clueModal').modal('hide');
 	$('#incorrectModal').modal('show');
@@ -165,8 +183,16 @@ const showIncorrectModal = (e) => {
 const showGameOverModal = (e) => {
 	let gameOverModal = document.getElementById('gameOverModal')
 	$('.btn-danger').on('click', (e) => {
+
 		// real reset button here one day
 	})
 	$('#incorrectModal').modal('hide');
 	$('#gameOverModal').modal('show');
 }
+
+// $('#clueModal').on('hidden.bs.modal') = (e) => {
+// 	answerA.classList.remove('correct');
+// 	answerB.classList.remove('correct');
+// 	answerC.classList.remove('correct');
+// 	answerD.classList.remove('correct');
+// }
