@@ -107,7 +107,7 @@ const finalAnswer = () => {
 	// we will need an if else statement here so that we can add and remove classes for the correct and incorrect answers for the score tally
 	if (event.target.classList.contains('correct')) {
 		event.target.classList.remove('btn-primary');
-		event.target.classList.add('btn-success');
+		event.target.classList.add('btn-success'); // btn-success / danger are accessibility helpers--want to revisit
 		showCorrectModal();
 		tallyScore(parseInt(hintPoints.substring(1)));
 		// in the future, one way to truly win the game could be document.querySelectorAll('.disabled').length. if it's === 30, then game over.

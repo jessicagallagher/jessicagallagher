@@ -104,6 +104,11 @@ const disableButton = (event) => {
 	event.innerHTML = '';
 } // would like to figure out how to get the hover to stop when it's disabled. added way too many features.
 
+// working on a reset button... WIP
+const enableButton = (event) => {
+	event.classList.remove('disabled');
+}
+
 
 const finalAnswer = () => {
 	disableButton(clickedHint);
@@ -124,7 +129,7 @@ const finalAnswer = () => {
 
 		tallyScore(-parseInt(hintPoints.substring(1))); // -parstInt because we need to subtract, but see more deets below in the function. this is all about what the user sees.
 		// win/lose condition--want to add AI in the future, so essentially you win if you don't lose. you can't make up the points.
-		if (currentScore <= -9000) {
+		if (currentScore <= -1000) {
 			showGameOverModal();
 		}
 	}
@@ -181,11 +186,17 @@ const showIncorrectModal = (e) => {
 const showGameOverModal = (e) => {
 	let gameOverModal = document.getElementById('gameOverModal')
 	$('.btn-danger').on('click', (e) => {
-
-		// real reset button here one day
+		$('#gameOverModal').modal('hide');
+		answerA.classList.remove('correct');
+		answerB.classList.remove('correct');
+		answerC.classList.remove('correct');
+		answerD.classList.remove('correct');
+		enableButton(clickedHint); // only works on the last hint clicked...
+		// hints['cluenames' + cluenames]['clue' + clue].classList.remove('disabled');
 	})
 	$('#incorrectModal').modal('hide');
 	$('#gameOverModal').modal('show');
+
 }
 
 // $('#clueModal').on('hidden.bs.modal') = (e) => {
@@ -193,4 +204,4 @@ const showGameOverModal = (e) => {
 // 	answerB.classList.remove('correct');
 // 	answerC.classList.remove('correct');
 // 	answerD.classList.remove('correct');
-// }
+// } can't make another function for this--the code block needs to go into the hide modal function that i already wrote. wanted to try this anyway because i thought i needed to use bootstrap lingo to get the classes to remove (the 'hidden.bs.modal' part).
