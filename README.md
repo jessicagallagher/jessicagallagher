@@ -19,3 +19,8 @@
 📸 My [Finstagram](https://www.instagram.com/techmeowt/) and [Catstagram](https://www.instagram.com/wizandmaxbk/)
 
 🎵 My Justin Beiber-heavy coding [playlist](https://open.spotify.com/playlist/7p1xmOvf52aqR1OVDY8yRE?si=a403d12773674e9b)
+
+
+<p align="center"><img src="https://github.com/jessicagallagher/jessicagallagher/blob/main/me.JPG" width="250px" /></p>
+<p align="center">So... Um... I really like React.</p>
+
