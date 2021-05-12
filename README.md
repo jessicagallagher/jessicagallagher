@@ -10,7 +10,9 @@
 
 ## 👀 Wanna get to know me?
 
-👩‍💻 My (WIP) [portfolio](https://www.iamjessg.com)
+👩‍💻 My (for now) [portfolio](https://www.iamjessg.com)
+
+💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my new portfolio--it's gonna be legit! When I finish it! One day... 😩
 
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
