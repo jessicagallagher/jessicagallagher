@@ -4,7 +4,7 @@
 
 💫 Languages: HTML, CSS, JavaScript (ES6, jQuery, EJS, TypeScript + JSX), Python, SQL
 
-🌟 Libraries + Frameworks: React.js, React Native, Node.js, Express.js, Next.js, Flask, AngularJS
+🌟 Libraries + Frameworks: MERN, PERN, MEAN, React Native, Next.js, Flask, Django
 
 ✨ Databases: PostgreSQL, MongoDB, Mongoose ODM, Firebase
 
@@ -15,8 +15,6 @@
 💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my new portfolio--it's gonna be legit! When I finish it! One day... 😩
 
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
-
-📝 My [blog](https://techmeowt.medium.com/) where I pretend to be very smört (opinions = own)
 
 📸 My [Finstagram](https://www.instagram.com/techmeowt/) and [Catstagram](https://www.instagram.com/wizandmaxbk/)
 
