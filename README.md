@@ -14,15 +14,13 @@
 
 📸 My [Instagram](https://www.instagram.com/techmeowt/) and [Catstagram](https://www.instagram.com/wizandmaxbk/)
 
-🎵 My Justin Beiber-heavy coding [playlist](https://open.spotify.com/playlist/7p1xmOvf52aqR1OVDY8yRE?si=a403d12773674e9b)
-
 ---
 
 <h3>:heart_eyes: These are a few of my favorite things: 💞</h3>
 
 🕵🏼‍♀️ **_SQL Database:_** Prisma
 
-🗄 **_NoSQL Database:_** Firebase
+🗄 **_NoSQL Database:_** MongoDB
 
 :books: **_Library:_** React
 
