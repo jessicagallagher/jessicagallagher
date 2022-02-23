@@ -4,6 +4,8 @@
 
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jessicagallagher&show_icons=true)
 
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Your_GitHub_Username&theme=blue-green)
+
 ---
 
 <h3>❓ Wanna get to know me? 👀</h3>
