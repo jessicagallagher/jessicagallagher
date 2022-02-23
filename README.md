@@ -1,6 +1,6 @@
 # 👋🏻 Hello, world. I'm Jessica! 👩🏼‍💻
 
-🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek. 
+🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek.
 
 ---
 
