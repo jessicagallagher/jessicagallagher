@@ -29,3 +29,12 @@
 🏗 **_Framework:_** Next.js
 
 🎨 **_CSS Framework:_** Tailwind CSS / Tailwind UI
+
+---
+
+<h3>⁇ Ask me about... 🤔</h3>
+
+🏃🏼‍♀️ Running! 🏅
+  
+<p align="center">
+  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/IMG_1170.JPG' height='400' alt='woman crossing the finish line of a marathon'></img></p>
