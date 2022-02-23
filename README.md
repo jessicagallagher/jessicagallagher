@@ -4,7 +4,7 @@
 
 ---
 
-<h3>👀 Wanna get to know me? ❓</h3>
+<h3>❓ Wanna get to know me? 👀</h3>
 
 👩‍💻 My (under construction) [portfolio](https://www.iamjessg.com)
 
@@ -13,6 +13,8 @@
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
 📸 My [Instagram](https://www.instagram.com/techmeowt/) and [Catstagram](https://www.instagram.com/wizandmaxbk/)
+
+🎵 My _maybe_ Justin Beiber-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
 
 ---
 
