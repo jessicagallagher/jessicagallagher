@@ -34,7 +34,13 @@
 
 <h3>⁇ Ask me about... 🤔</h3>
 
-🏃🏼‍♀️ Running! 🏅
+🏃🏼‍♀️ Running 🏅
   
 <p align="center">
   <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/IMG_1170.JPG' height='400' alt='woman crossing the finish line of a marathon'></img></p>
+  
+😸 My cats / decorating skills
+
+<p align="center">
+  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/IMG_0598%202.jpg' height='400' width='275' alt='black cat and tabby cat'></img>
+</p>
