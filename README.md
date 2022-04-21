@@ -14,8 +14,6 @@
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my under construction portfolio
 
-💻 [What I'm working on](https://github.com/Tech-Meowt/r2b-2/tree/dev)
-
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
 🎵 My _maybe_ Justin Beiber-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
