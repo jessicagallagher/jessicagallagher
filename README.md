@@ -14,6 +14,8 @@
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my under construction portfolio
 
+💻 My current [project](https://github.com/Tech-Meowt/red2blue-v1)
+
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
 🎵 My _maybe_ Justin Beiber-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
