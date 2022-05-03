@@ -10,9 +10,11 @@
 
 <h3>❓ Wanna get to know me? 👀</h3>
 
-👩‍💻 My (under construction) [portfolio](https://www.iamjessg.com)
+🚧 My (under construction) [portfolio](https://www.iamjessg.com)
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my under construction portfolio
+
+👩‍💻 [What](https://github.com/Tech-Meowt/red2blue-v1) I'm currently building
 
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
