@@ -10,15 +10,15 @@
 
 <h3>❓ Wanna get to know me? 👀</h3>
 
-🚧 My (under construction) [portfolio](https://www.iamjessg.com)
+🚧 Tech Meowt's (under construction) [website](https://www.iamjessg.com)
 
-💯 The [repo](https://github.com/jessicagallagher/iamjessg) for my under construction portfolio
+💯 The [repo](https://github.com/jessicagallagher/iamjessg) for Tech Meowt
 
 👩‍💻 [What](https://github.com/Tech-Meowt/red2blue-v1) I'm currently building
 
 👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
-🎵 My _maybe_ Justin Beiber-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
+🎵 My _maybe_ ABBA-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
 
 ---
 
