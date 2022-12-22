@@ -1,6 +1,12 @@
-# 👋🏻 Hello, world. I'm Jessica! 👩🏼‍💻
+<h1 align="center">👋🏻 Hello, world. I'm Jessica! 👩🏼‍💻</h1>
 
-🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek.
+<div align="center">🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek.
+  
+![Profile views](https://gpvc.arturio.dev/jessicagallagher) [![GitHub followers](https://img.shields.io/github/followers/jessicagallagher.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jessicagallagher?tab=followers) ![GitHub stars](https://img.shields.io/github/stars/jessicagallagher?style=social)
+
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=jessicagallagher&theme=blue-green)
+  
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jessicagallagher&show_icons=true) [![GitHub Streak](https://streak-stats.demolab.com/?user=jessicagallagher)](https://git.io/streak-stats)</div>
 
 ---
 
@@ -33,18 +39,3 @@
 😎 **_Stacks On Stacks On Stacks:_** PERN
 
 😎 **_CMS:_** Sanity
-
----
-
-<h3>⁇ Ask me about... 🤔</h3>
-
-🏃🏼‍♀️ Running 🏅
-  
-<p align="center">
-  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/7992_20220925_171209_249739587_original.jpg' height='400' alt='woman crossing the finish line of a marathon'></img></p>
-  
-😸 My cats / decorating skills
-
-<p align="center">
-  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/IMG_0598%202.jpg' height='400' width='275' alt='black cat and tabby cat'></img>
-</p>
