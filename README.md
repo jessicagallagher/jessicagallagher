@@ -32,7 +32,7 @@
 
 😎 **_Stacks On Stacks On Stacks:_** PERN
 
-🤓 **_CMS:_** Sanity
+😎 **_CMS:_** Sanity
 ---
 
 <h3>⁇ Ask me about... 🤔</h3>
