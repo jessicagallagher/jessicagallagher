@@ -2,23 +2,19 @@
 
 🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek.
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=jessicagallagher&show_icons=true)
-
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=jessicagallagher&theme=blue-green)
-
 ---
 
 <h3>❓ Wanna get to know me? 👀</h3>
 
-🚧 Tech Meowt's (under construction) [website](https://www.iamjessg.com)
+🚧 Tech Meowt's (ever-evolving) [website](https://www.techmeowt.com)
 
-💯 The [repo](https://github.com/jessicagallagher/iamjessg) for Tech Meowt
+💯 The [repo](https://github.com/jessicagallagher/iamjessg/tree/dev) for Tech Meowt
 
-👩‍💻 [What](https://github.com/Tech-Meowt/red2blue-v1) I'm currently building
+👩‍💻 [What](https://github.com/jessicagallagher/date-night) I'm currently building—spoiler alert... it's a date night app where you can pair wine with food, food with wine, and find cool things to do in your city
 
-👩‍💼 My very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
+👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
-🎵 My _maybe_ ABBA-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)
+🎵 My Vitamin String Quartet-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)—not gonna lie—it's pretty eclectic
 
 ---
 
@@ -26,7 +22,7 @@
 
 🕵🏼‍♀️ **_SQL Database:_** Prisma
 
-🗄 **_NoSQL Database:_** MongoDB
+🗄 **_NoSQL Database:_** Firestore
 
 :books: **_Library:_** React
 
@@ -34,6 +30,9 @@
 
 🎨 **_CSS Framework:_** Tailwind CSS / Tailwind UI
 
+😎 **_Stacks On Stacks On Stacks:_** PERN
+
+🤓 **_CMS:_** Sanity
 ---
 
 <h3>⁇ Ask me about... 🤔</h3>
@@ -41,7 +40,7 @@
 🏃🏼‍♀️ Running 🏅
   
 <p align="center">
-  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/IMG_1170.JPG' height='400' alt='woman crossing the finish line of a marathon'></img></p>
+  <img src='https://github.com/jessicagallagher/jessicagallagher/blob/main/7992_20220925_171209_249739587_original.jpg' height='400' alt='woman crossing the finish line of a marathon'></img></p>
   
 😸 My cats / decorating skills
 
