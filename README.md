@@ -16,7 +16,7 @@
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg/tree/dev) for Tech Meowt
 
-👩‍💻 [What](https://github.com/jessicagallagher/date-night) I'm currently building—spoiler alert—it's a date night app where you can pair wine with food, food with wine, and find cool things to do in your city
+👩‍💻 [What](https://github.com/jessicagallagher/date-night) I'm currently building—spoiler alert—it's a wine pairing app because I like wine... and food
 
 👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
