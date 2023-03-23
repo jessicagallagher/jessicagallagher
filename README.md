@@ -36,6 +36,6 @@
 
 🎨 **_CSS Framework:_** Tailwind CSS / Tailwind UI
 
-😎 **_Stacks On Stacks On Stacks:_** PERN
+😎 **_Stacks On Stacks On Stacks:_** MERN / PERN
 
-😎 **_CMS:_** Sanity
+😎 **_CMS:_** Prismic
