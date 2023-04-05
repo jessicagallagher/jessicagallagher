@@ -28,7 +28,7 @@
 
 🕵🏼‍♀️ **_SQL Database:_** Prisma
 
-🗄 **_NoSQL Database:_** Firestore
+🗄 **_NoSQL Database:_** MongoDB
 
 :books: **_Library:_** React
 
