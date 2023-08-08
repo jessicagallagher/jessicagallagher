@@ -2,7 +2,7 @@
 
 <div align="center">🗽🍎 I’m a Brooklyn-based full-stack software engineer with a passion for creating user-friendly and intuitive applications. I like single quotes and semi-colons—even when they play hide-and-seek.
 
-<br></br>
+[![GitHub followers](https://img.shields.io/github/followers/jessicagallagher.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jessicagallagher?tab=followers) ![GitHub stars](https://img.shields.io/github/stars/jessicagallagher?style=social)
 
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=jessicagallagher&theme=blue-green)
   
