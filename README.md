@@ -42,4 +42,4 @@
 
 :point_right: **Stacks On Stacks On Stacks:** MERN + PERN
 
-:thumbsup: **CMS:** Hygraph
+:thumbsup: **CMS:** Prismic
