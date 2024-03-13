@@ -18,7 +18,7 @@
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg/tree/dev) for Tech Meowt
 
-👩‍💻 [What](https://github.com/Tech-Meowt/r2b-website) I'm currently building
+👩‍💻 [What](https://github.com/Tech-Meowt/petsitter-app) I'm currently building
 
 👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
