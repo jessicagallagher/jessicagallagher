@@ -30,7 +30,7 @@
 
 <h3>:heart_eyes: These are a few of my favorite things: 💞</h3>
 
-🕵🏼‍♀️ **SQL Database:** Prisma
+🕵🏼‍♀️ **SQL Database:** Supabase
 
 🗄 **NoSQL Database:** MongoDB
 
