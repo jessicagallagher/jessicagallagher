@@ -32,7 +32,7 @@
 
 🕵🏼‍♀️ **SQL Database:** Supabase
 
-🗄 **NoSQL Database:** MongoDB
+🗄 **NoSQL Database:** Google Firestore
 
 :books: **Library:** React
 
