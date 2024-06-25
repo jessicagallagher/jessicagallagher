@@ -24,7 +24,7 @@
 
 🎵 My Vitamin String Quartet-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)—not gonna lie—it's pretty eclectic
 
-🏃🏼‍♀️ What [race](https://www.coursesthematiques.com/marathon-de-longueuil-sunlife-en) I'm training for
+🏃🏼‍♀️ My 6th [marathon](https://www.philadelphiamarathon.com/) that I'm training for
 
 <h1></h1>
 
