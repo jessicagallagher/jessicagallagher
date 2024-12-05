@@ -30,6 +30,8 @@
 
 🎮 My very impressive [Fortnite Stats](https://fortnitetracker.com/profile/all/maxyjwaxy420)
 
+💼 My [portfolio](https://www.techmeowt.com/about/portfolio/jessica-gallagher) that I always forget to update
+
 <h1></h1>
 
 <h3>:heart_eyes: These are a few of my favorite things: 💞</h3>
