@@ -24,7 +24,11 @@
 
 🎵 My Vitamin String Quartet-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)—not gonna lie—it's pretty eclectic
 
-🏃🏼‍♀️ My 6th [marathon](https://www.philadelphiamarathon.com/) that I'm training for
+🏃🏼‍♀️ The 7th [marathon](https://www.brightonmarathonweekend.co.uk/) that I'm training for
+
+🤔 All of my questions and answers on [Stack Overflow](https://stackoverflow.com/users/15373625/techmeowt)
+
+🎮 My very impressive [Fortnite Stats](https://fortnitetracker.com/profile/all/maxyjwaxy420)
 
 <h1></h1>
 
@@ -32,13 +36,15 @@
 
 🕵🏼‍♀️ **SQL Database:** Supabase
 
-🗄 **NoSQL Database:** Google Firestore
+🗄 **NoSQL Database:** MongoDB
 
 :books: **Library:** React
 
 🏗 **Framework:** Next.js
 
 🎨 **CSS Framework:** Tailwind CSS
+
+🔐 **Authentication:** Supabase
 
 :point_right: **Stacks On Stacks On Stacks:** MERN + PERN
 
