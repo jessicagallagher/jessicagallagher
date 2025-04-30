@@ -23,7 +23,7 @@
 
 🎵 My Vitamin String Quartet-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)—not gonna lie—it's pretty eclectic
 
-🏃🏼‍♀️ The 7th [marathon](https://www.brightonmarathonweekend.co.uk/) that I'm training for
+🏃🏼‍♀️ The 8th [marathon](https://www.torontowaterfrontmarathon.com/) that I'm training for
 
 🤔 All of my questions and answers on [Stack Overflow](https://stackoverflow.com/users/15373625/techmeowt)
 
