@@ -17,8 +17,6 @@
 
 💯 The [repo](https://github.com/jessicagallagher/iamjessg/tree/dev) for Tech Meowt
 
-👩‍💻 [What](https://github.com/Tech-Meowt/petsitter-app) I'm currently building
-
 👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
 🎵 My Vitamin String Quartet-heavy coding [playlist](https://music.apple.com/us/playlist/pl.u-zPyLl9YFxVmDVW)—not gonna lie—it's pretty eclectic
