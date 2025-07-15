@@ -6,7 +6,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=jessicagallagher&color=brightgreen" alt="watching_count" /> [![GitHub followers](https://img.shields.io/github/followers/jessicagallagher.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jessicagallagher?tab=followers) ![GitHub stars](https://img.shields.io/github/stars/jessicagallagher?style=social) <a href="https://www.linkedin.com/in/jessica-gallagher/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> <a href="https://www.instagram.com/techmeowt/" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
 
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=jessicagallagher&theme=blue-green&hide_progress=true)
 </div>
 
 <h1></h1>
