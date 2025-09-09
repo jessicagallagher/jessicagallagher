@@ -12,9 +12,9 @@
 
 <h3>❓ Wanna get to know me? 👀</h3>
 
-🚧 Tech Meowt's (ever-evolving) [website](https://www.techmeowt.com)
+🚧 My (ever-evolving) [portfolio](https://www.jessicagallagher.com)
 
-💯 The [repo](https://github.com/jessicagallagher/iamjessg/tree/dev) for Tech Meowt
+💯 The [repo](https://github.com/jessicagallagher/jessicalgallagher) for Tech Meowt
 
 👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
@@ -25,8 +25,6 @@
 🤔 All of my questions and answers on [Stack Overflow](https://stackoverflow.com/users/15373625/techmeowt)
 
 🎮 My very impressive [Fortnite Stats](https://fortnitetracker.com/profile/all/maxyjwaxy420)
-
-💼 My [portfolio](https://www.techmeowt.com/about/portfolio/jessica-gallagher) that I always forget to update
 
 <h1></h1>
 
