@@ -14,7 +14,7 @@
 
 🚧 My (ever-evolving) [portfolio](https://www.jessicagallagher.com)
 
-💯 The [repo](https://github.com/jessicagallagher/jessicalgallagher) for Tech Meowt
+💯 The [repo](https://github.com/jessicagallagher/jessicalgallagher) for my portfolio
 
 👩‍💼 My prior haunts on my very serious [LinkedIn](https://www.linkedin.com/in/jessica-gallagher)
 
